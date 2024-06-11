@@ -1,0 +1,97 @@
+.nav-wrap {
+  background-color: #fff;
+  -moz-box-shadow: 0px 0px 2px 2px #f2f2f2;
+       box-shadow: 0px 0px 2px 2px #f2f2f2;
+}
+.nav-wrap .cSelect select {
+  font-size: 11px;
+}
+.nav-wrap .nameEvent {
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav-wrap .noEvent {
+  color: #888;
+  font-size: 13px;
+}
+.nav-wrap .picEvent {
+  width: 80%;
+}
+.nav-wrap .titleEvent h2 {
+  margin: 0;
+}
+.nav-wrap .titleEvent p {
+  margin: 0;
+}
+.nav-wrap .vertical-align {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-align: center;
+   -ms-flex-align: center;
+       align-items: center;
+}
+.nav-wrap .vertical-align img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+.nav-wrap .wrapMesaLogo {
+  padding: 15px 0px 15px 0px;
+}
+.nav-wrap .nav-style p {
+  margin: 0;
+}
+.nav-wrap .nav-style .col-lg-1 {
+  text-align: center;
+}
+.nav-wrap .nav-style .wrapLiverpoolLogo {
+  background-color: #e3e3e3;
+}
+.nav-wrap .nav-style a:hover {
+  text-decoration: none;
+}
+.nav-wrap .nav-style .form-control {
+  height: 38px;
+}
+.nav-wrap .nav-style .buttonSearch {
+  background-color: #e10098;
+  color: #fff;
+}
+.nav-wrap .nav-style .buttonSearch:hover {
+  background-color: #e10098;
+  color: #fff;
+}
+.nav-wrap .nav-style .textLabel {
+  font-size: 11px;
+}
+.nav-wrap .nav-style .backAction {
+  cursor: pointer;
+  font-size: 25px;
+  color: #000;
+}
+.nav-wrap .nav-style .liverpoolAction {
+  padding: 8px;
+  cursor: pointer;
+  font-size: 45px;
+  color: #e10098;
+  display: inline-block;
+}
+.nav-wrap .nav-style .wrapSearch {
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  height: 63px;
+}
+.nav-wrap .nav-style .wrapSesion {
+  text-align: right;
+}
+.nav-wrap .nav-style .wrapSesion i {
+  position: absolute;
+  top: 10px;
+  font-size: 10px;
+  right: -1px;
+}
+.nav-wrap .nav-style .wrapSesion a {
+  color: #000;
+}

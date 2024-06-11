@@ -1,0 +1,253 @@
+.size-Smallest {
+  height: 40px;
+  width: 100px;
+}
+.size-Smallest .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Smallest .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.size-Small {
+  height: 35px;
+  width: 135px;
+}
+.size-Small .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Small .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.size-Medium {
+  height: 40px;
+  width: 180px;
+}
+.size-Medium .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Medium .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.size-Large {
+  height: 50px;
+  width: 200px;
+}
+.size-Large .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Large .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.size-ExtraLarge {
+  height: 50px;
+  width: 280px;
+}
+.size-ExtraLarge .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-ExtraLarge .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.size-Big {
+  height: 50px;
+  width: 330px;
+}
+.size-Big .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Big .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.size-Full {
+  height: 50px;
+  width: 100%;
+}
+.size-Full .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Full .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+#giftBackground {
+  background: #f7f3f0 url("../images/giftBackground.png") repeat;
+}
+#grayBackground {
+  background: #f0f0f0;
+}
+/* .modal:before,
+.modal content '',
+.modal display inline-block,
+.modal height 100%,
+.modal vertical-align middle,
+.modal margin-right -4px,
+.modal .modal-dialog,
+.modal text-align left, */
+.modal button {
+  font-family: 'robotoCondensed';
+}
+.modal .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+body {
+  font-family: 'robotoCondensed';
+  font-size: 16px;
+  font-style: normal;
+}
+.container {
+  background: #fff;
+}
+.employee {
+  height: auto;
+  margin-top: 30px;
+}
+.bodyEmployee {
+  height: 70%;
+}
+.mainTitle {
+  text-align: center;
+}
+.rowBtnAdd,
+.rowNotification,
+.rowLblInfo,
+.errorInfo {
+  margin: 0 0 5px 5%;
+  padding: 0;
+}
+.rowBtnAdd,
+.rowLblInfo {
+  border-bottom: 1px solid #808080;
+  width: 90%;
+}
+.btnAdd {
+  float: right;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.rowNotification {
+  width: 90%;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-pack: justify;
+   -ms-flex-pack: justify;
+       justify-content: space-between;
+}
+.reverseInfo {
+  -moz-box-orient: horizontal;
+  -moz-box-direction: reverse;
+   -ms-flex-direction: row-reverse;
+       flex-direction: row-reverse;
+}
+.mainListCard,
+.formNewCard {
+  margin: 0 0 5px 4%;
+}
+.cardList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.rowList {
+  margin-bottom: 20px;
+}
+.detailCard {
+  margin: 0;
+  padding: 0;
+}
+.cardIdentifier {
+  font-size: 1.2em;
+}
+.rowButtons {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-pack: justify;
+   -ms-flex-pack: justify;
+       justify-content: space-between;
+  border-top: 1px solid #808080;
+}
+.btnFlow {
+  margin: 20px;
+}
+.cardListHide {
+  display: none;
+}
+.rowLblInfo label {
+  padding: 10px 0;
+  color: #808080;
+}
+.lblrequired {
+  color: #f00;
+}
+.infoDetail {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  color: #808080;
+}
+.reduceLine {
+  margin-bottom: 5px;
+}
+.lblform {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.ctrlBtn {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-pack: center;
+   -ms-flex-pack: center;
+       justify-content: center;
+}
+.ctrlBtn button {
+  margin: 10px;
+}
+.ctrlBtnAddNewCreditCard button{
+  margin: 0 10px;
+}
+.footerInfo {
+  padding-left: 7%;
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+.footerInfo label {
+  color: #dd0092;
+}
+.errorInfo {
+  width: 90%;
+}
+.wrapLiverpoolLogo {
+  width: auto;
+}

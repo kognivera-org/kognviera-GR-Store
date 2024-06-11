@@ -1,0 +1,115 @@
+.indexedStep {
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    background-color: #D8D8D8;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D8D8D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indexedStep.completed{
+    background-color: #E10098;
+}
+.textStep0 {
+    top: 115%;
+    position: fixed;
+    width: 100px;
+    left: -50%;
+    margin-bottom: 12%;
+}
+.textStep1 {
+    top: 115%;
+    position: fixed;
+    width: 100px;
+    left: -80%;
+    margin-bottom: 12%;
+}
+.textStep2 {
+    top: 115%;
+    position: fixed;
+    width: 100px;
+    left: -80%;
+    margin-bottom: 12%;
+}
+.textStep3 {
+    top: 115%;
+    position: fixed;
+    width: 100px;
+    left: -120%;
+    margin-bottom: 12%;
+}
+.textCompleted {
+    color: #E10098;
+}
+.textUnCompleted{
+    top: 115%;
+    position: fixed;
+    width: 100px;
+    left: -50%;
+    margin-bottom: 12%;
+}
+.RSPBprogressBar {
+    height: 2px;
+    width: 98%;
+    line-height: 1;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgb(207, 207, 207);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+    margin: 20px auto;
+    margin-bottom: 8%;
+}
+
+.RSPBprogressBar .RSPBstep {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    position: absolute;
+    transform: translateX(-50%);
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.RSPBprogressBar .RSPBprogressBarText {
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.RSPBprogressBar .RSPBprogression {
+    position: absolute;
+    transition: width 0.3s ease;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background: #E10098;
+    z-index: -1;
+}
+
+@media screen and (max-width: 480px) {
+    .indexedStep{
+        width: 15px;
+        height: 15px;
+        font-size: 6px;
+    }
+    .RSPBprogressBar{
+        margin-bottom: 20%;
+    }
+    .textStep0, .textStep1, .textStep2, .textStep3{
+        font-size: 10px;
+        width: 50px;
+    }
+} 

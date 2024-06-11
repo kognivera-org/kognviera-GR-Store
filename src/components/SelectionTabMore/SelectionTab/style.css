@@ -1,0 +1,98 @@
+.inputBlock {
+    color: #b3b3b3;
+    padding: 8px 0 10px 13px;
+    position: relative;
+}
+.optionBlock {
+    color: black;
+}
+select {    
+      /* styling */
+      background-color: white;
+      border-radius: 4px;
+      display: inline-block;
+      font: inherit;
+      line-height: 1.5em;
+      padding: 0.5em 3.5em 0.5em 1em;    
+      /* reset */    
+      margin: 0;      
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+select.minimal {
+    background-image:
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        linear-gradient(to right, #ccc, #ccc);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+    }
+
+.inputBlock .labelInput,
+.inputBlock .labelSelect {
+    color: #b3b3b3;
+    font-size: 15px;
+    left: 0px;
+    padding: 10px 0 10px 13px;
+    position: absolute;
+    margin: 0;
+    top: 0px;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+}
+.inputBlock .labelInput span,
+.inputBlock .labelSelect span {
+    color: #f00;
+    margin-right: -3px;
+}
+.inputBlock .labelInput.inputActive,
+.inputBlock .labelSelect.inputActive {
+    font-size: 10px;
+    padding: 5px 0 0 13px;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: auto;
+}
+.inputBlock p.labelSelect {
+    left: 22px;
+    padding: 0;
+    top: 20px;
+    width: auto;
+}
+.inputBlock .labelInput,
+.inputBlock .labelSelect {
+  color: #b3b3b3;
+  font-size: 15px;
+  left: 0px;
+  padding: 10px 0 10px 13px;
+  position: absolute;
+  margin: 0;
+  top: 0px;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+.inputBlock .labelInput span,
+.inputBlock .labelSelect span {
+  color: #f00;
+  margin-right: -3px;
+}
+.inputBlock .labelInput.inputActive,
+.inputBlock .labelSelect.inputActive {
+  font-size: 10px;
+  padding: 5px 0 0 13px;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: auto;
+}

@@ -1,0 +1,154 @@
+.grid,
+.grid-centered-big,
+.grid-two-elements,
+.grid-3-equal {
+  margin: 1.5em auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+  min-height: 1em;
+}
+.titleSection {
+  font-size: 25px;
+}
+.grid-centered-big {
+  -ms-grid-columns: 1fr 20fr 1fr;
+      grid-template-columns: 1fr 20fr 1fr;
+}
+.grid-two-elements {
+  grid-gap: 3px;
+  -ms-grid-columns: 10fr 0.1fr 10fr;
+      grid-template-columns: 10fr 0.1fr 10fr;
+}
+.grid-3-equal {
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+.red {
+  background-color: #f00;
+}
+.container-full {
+  width: 100%;
+  min-height: 400px;
+}
+.right {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -moz-box-pack: end;
+   -ms-flex-pack: end;
+       justify-content: flex-end;
+}
+.custom-size {
+  height: 50px;
+  width: 190px;
+}
+.left {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -moz-box-pack: start;
+   -ms-flex-pack: start;
+       justify-content: flex-start;
+}
+.btnSecondaryCustom {
+  background-color: #ccc;
+  height: 40px;
+  width: 100%;
+  margin: 0px;
+  border: none;
+  text-align: center;
+}
+.btnPrimaryCustom {
+  background-color: #000;
+  color: #fff;
+  height: 40px;
+  width: 100%;
+  margin: 0px;
+  border: none;
+  text-align: center;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mr-15 {
+  margin-right: 15px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.m-30 {
+  margin: 30px;
+}
+.mh-30 {
+  margin: auto 30px;
+}
+.p-30 {
+  padding: 0 30px 30px 30px;
+}
+.nmh {
+  margin-right: 0;
+  margin-left: 0;
+}
+.nph {
+  padding-right: 0;
+  padding-left: 0;
+}
+.margin-right-30 {
+  margin: 30px 30px 30px 0;
+}
+.icono-grande-inline {
+  display: inline;
+  font-size: 2em;
+}
+.contract-container {
+  border: 1px dashed #757575;
+  padding: 10px;
+  overflow: auto;
+  min-height: 200px;
+  max-height: 400px;
+}
+.white {
+  background-color: #fff;
+}
+.shadow {
+  -moz-box-shadow: 0 0 8px #ccc;
+       box-shadow: 0 0 8px #ccc;
+}
+.tituloCard {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.tituloSeccion {
+  font-size: 2em;
+  font-family: 'robotoCondensed';
+}
+.subtituloSeccion {
+  font-size: 1.2em;
+}
+.tituloForm {
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: 'robotoCondensed';
+}
+.legendDown {
+  top: -15px;
+  left: 15px;
+}
+label.invalid,
+label.error {
+  color: #f00;
+  font-weight: 200;
+}
+input.invalid,
+input.error,
+select.error {
+  border: 1px solid #f00;
+}

@@ -1,0 +1,50 @@
+.fill {
+  min-height: 100%;
+  height: 100%;
+}
+.managementMenu {
+  background-color: #666;
+  min-height: 100%;
+}
+.managementMenu .nav-management {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.managementMenu .nav-management li {
+  border-bottom: 1px solid #797979;
+}
+.managementMenu .nav-management li a {
+  display: block;
+  padding: 15px 10px 15px 10px;
+  cursor: pointer;
+  color: #fff;
+}
+.managementMenu .nav-management li a:hover {
+  text-decoration: none;
+}
+.managementMenu .nav-management li a:before {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  content: '.';
+  position: absolute;
+  left: 180px;
+}
+.managementMenu .active {
+  background-color: #dfdfdf;
+  color: #666 !important;
+}
+.managementMenu .selected:before {
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #666;
+}
+.dynamicFrame {
+  background: #fff;
+  -moz-box-shadow: 2px 2px 4px 1px #b3b3b3;
+       box-shadow: 2px 2px 4px 1px #b3b3b3;
+  margin: 20px auto 30px;
+  padding: 15px 15px 80px 15px;
+  width: 95%;
+}

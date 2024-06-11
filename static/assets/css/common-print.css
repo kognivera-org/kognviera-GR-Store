@@ -1,0 +1,141 @@
+@media print {
+    @page {
+      size: 330mm 427mm;
+      margin-top: 4cm;
+      margin-bottom: 2cm;
+      margin-left: 2cm;
+      margin-right: 2cm;
+    }
+    /* Temporary font change */
+    * {
+        font-family: Arial, Helvetica, sans-serif !important; 
+        font-size: 1.025em;
+    }
+    @font-face {
+        font-family: 'icomoon';
+        src: url("../css/fonts/icomoon.eot?wzcl1g");
+        src: url("../css/fonts/icomoon.eot?wzcl1g#iefix") format('embedded-opentype'), url("../css/fonts/icomoon.ttf?wzcl1g") format('truetype'), url("../css/fonts/icomoon.woff?wzcl1g") format('woff'), url("../css/fonts/icomoon.svg?wzcl1g#icomoon") format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    /* Temporary font change */
+    .container {
+      width: 1170px;
+    }
+    .non-printable {
+        display: none !important;
+    }
+    head {
+        display: none;
+    }
+
+    
+    /* .main {
+        margin-top: 0;
+        padding-top: 0;
+    } */
+    .pdfContent {
+        border: none !important;
+        overflow: visible !important;
+        min-height: none !important;
+    }
+
+    .info {
+        margin-right: 15px !important;
+        margin-left: 15px !important;
+    }
+
+    .toPrint {
+        margin-right: 15px !important;
+        margin-left: 15px !important;
+    } 
+    .downloadPrintPage.toPrint {
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+    .pdfclass img {
+        height: 75px;
+        width: auto;
+    }
+    /* .container {
+        width: 1170px;
+    } */
+    .eventSummary {
+        margin: 15px 30px !important;
+    }
+    /* .eventCreationContent h1.titleSection {
+        text-align: left;
+    } */
+    .print-header {
+        /* width: 1100px; */
+        margin-top: 15px; 
+    }
+    .pdfclass {
+        height: 75px;
+        margin-right: 30px;
+    }
+    /* .print-header .LPLogo {
+        display: inline;
+    }
+    .print-header .LPGRLogo {
+        display: inline;
+        right: 30px !important;
+        position: absolute;
+        right: 0;
+    } */
+    .print-header .LPGRLogo  img {
+        padding: 25px 0;
+        text-align: right;
+    }
+    div.contractWrapper div.col-xs-12.signature {
+        padding: 120px 0 0 0;
+    }
+    div.contractWrapper div.col-xs-12.signature > div > p {
+        border-top: 2px solid black;
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .display-hidden {
+        overflow: visible !important;
+        height: auto !important;
+    }
+    a[href]:after {
+        content: none !important;
+    }
+    /* changes for chrome print issue */
+    .col-md-6 {
+        width: 50%;
+        float: left;
+    }
+    .col-md-4 {
+        width: 33.33333%;
+        float: left;
+    }
+    .registeredgifts .nav-wrap, .personalpurchase .nav-wrap, .receivedgifts .nav-wrap, .eventdetails .nav-wrap, .partialtransference .nav-wrap, .closureconfirmation .nav-wrap, .closuretransference .nav-wrap, .partialconfirmation .nav-wrap, .searchforreturn .nav-wrap {
+        display: none;
+    }
+    /* for print generic */
+    .boxStyle, button, .btnPrimary, .btnPrimaryAction {
+        border:1px solid #ccc !important;
+    }
+    /* .main, .shadow {
+        border:1px solid #ccc;
+    } */
+
+
+    .container-middle{
+        padding: 0 !important;
+    }
+
+}
+
+@media screen {
+    .printable {
+        display: none;
+    }
+    div.col-xs-12.signature {
+        display:none;
+    }
+}

@@ -1,0 +1,87 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+.error {
+  color: #f00;
+}
+.placeHolderMaterial {
+  font-size: 12px;
+}
+.pt-15 {
+  padding: 15px 0 0 0;
+}
+.action-wrap {
+  text-align: center;
+}
+.action-wrap .row {
+  -moz-box-shadow: 0 0 8px #ccc;
+       box-shadow: 0 0 8px #ccc;
+  margin: 25px 0 25px 0;
+  padding: 15px 0 15px 0;
+  background-color: #fff;
+}
+.action-wrap button {
+  font-size: 22px;
+}
+.action-wrap p {
+  margin: 10px 0 10px 0;
+}
+.main .alignRight {
+  text-align: right;
+}
+.main .title {
+  font-size: 20px;
+  padding: 10px 0 10px 0;
+}
+.main p {
+  margin: 0;
+}
+.main .addAction {
+  text-decoration: underline;
+  color: #000;
+}
+.main .vertical-align {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-align: center;
+   -ms-flex-align: center;
+       align-items: center;
+}
+.main .radio span {
+  display: block;
+}
+.main .radio label {
+  padding: 0;
+  font-weight: bold;
+}
+.main .rowReminder {
+  border-top: 1px solid #f2f2f2;
+}
+.main .actionTag {
+  cursor: pointer;
+}
+.modal-custom .modal-dialog {
+  width: 300px;
+}
+.modal-custom .alignRight {
+  text-align: right;
+}
+.modal-custom button {
+  margin: 0 0 10px 0;
+}
+#searchEventModal .form-group {
+  margin-bottom: 23px;
+}
+#searchEventModal .show-grid-row {
+  clear: both;
+  margin: 0;
+  padding: 5px 0 5px 0;
+}
+.ph30 {
+  padding: 0 30px;
+}
+.bblink {
+  font-size: 1.2em;
+  font-weight: bold;
+}

@@ -1,0 +1,1182 @@
+/* *******************************************************************************
+Login page - styles from login.css
+******************************************************************************** */
+
+.login .size-Smallest {
+  height: 40px;
+  width: 100px;
+}
+.login .login .size-Smallest .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.login .login .size-Smallest .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.login .login .size-Small {
+  height: 35px;
+  width: 135px;
+}
+.login .login .size-Small .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.login .login .size-Small .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.login .login .size-Medium {
+  height: 40px;
+  width: 180px;
+}
+.login .login .size-Medium .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.login .login .size-Medium .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.login .login .size-Large {
+  height: 50px;
+  width: 200px;
+}
+.login .size-Large .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.login .size-Large .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.login .size-ExtraLarge {
+  height: 50px;
+  width: 280px;
+}
+.login .size-ExtraLarge .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.login .size-ExtraLarge .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.login .size-Big {
+  height: 50px;
+  width: 330px;
+}
+.login .size-Big .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.login .size-Big .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.login .size-Full {
+  height: 50px;
+  width: 100%;
+}
+.login .size-Full .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.login .size-Full .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+#giftBackground.login {
+  background: #f7f3f0 url("../images/giftBackground.png") repeat;
+}
+#grayBackground.login {
+  background: #f0f0f0;
+}
+.login .modal:before,
+.login .modal content '',
+.login .modal display inline-block,
+.login .modal height 100%,
+.login .modal vertical-align middle,
+.login .modal margin-right -4px,
+.login .modal .modal-dialog,
+.login .modal text-align left,
+.login .modal button {
+  font-family: 'robotoCondensed';
+}
+.login .modal .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.login .loginContent {
+  padding: 100px 0;
+}
+.login .loginContent a {
+  color: #e10098;
+  cursor: pointer;
+  display: block;
+  margin: 5px 0 0 0;
+  width: 55%;
+}
+.login .loginContent a:hover {
+  text-decoration: none;
+}
+.login .loginContent button {
+  font-size: 18px;
+}
+.login .loginContent form {
+  background: #fff;
+  -moz-box-shadow: 0 0 5px 2px #ddd;
+       box-shadow: 0 0 5px 2px #ddd;
+  padding: 20px 10px;
+}
+.login .loginContent form span.error {
+  color: #f00;
+  display: block;
+  font-size: 12px;
+  padding: 3px 0 0 5px;
+}
+.login .loginContent form .formBlock {
+  margin-bottom: 20px;
+}
+.login .loginContent form .materialStyle {
+  margin: 0;
+}
+.login .loginContent h1 {
+  font-family: 'robotoCondensed';
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+}
+.login .loginContent .errorLoginForm {
+  display: block;
+  margin-bottom: 20px;
+  max-height: 40px;
+  padding: 0;
+}
+.login .loginContent .errorLoginForm i.icon-tache2 {
+  font-size: 25px;
+  height: 100%;
+  padding-top: 8px;
+  text-align: center;
+  width: 40px;
+}
+.login .loginContent .errorLoginForm p {
+  font-size: 12px;
+  width: 80%;
+}
+.login .loginContent .errorLoginForm a.icon-tache2 {
+  color: #fff;
+  font-size: 6px;
+  margin: 10px 5px 0 0;
+}
+.login .loginContent .whiteTooltip + .tooltip > .tooltip-inner {
+  background-color: #fefefe;
+  -moz-box-shadow: 0 0 2px 2px #ddd;
+       box-shadow: 0 0 2px 2px #ddd;
+  color: #000;
+  padding: 5px;
+  text-align: left;
+}
+.login .loginContent .whiteTooltip + .tooltip > .tooltip-arrow {
+  border-bottom-color: #fefefe;
+}
+
+
+/* *******************************************************************************
+Store Dashboard page - styles from dashboard.css
+******************************************************************************** */
+
+body.dashboard {
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+.dashboard .error {
+  color: #f00;
+}
+.dashboard .action-wrap {
+  text-align: center;
+}
+.dashboard .action-wrap .row {
+  -moz-box-shadow: 0 0 8px #ccc;
+       box-shadow: 0 0 8px #ccc;
+  margin: 25px 0 25px 0;
+  padding: 15px 0 15px 0;
+  background-color: #fff;
+}
+.dashboard .action-wrap button {
+  font-size: 22px;
+}
+.dashboard .action-wrap p {
+  margin: 10px 0 10px 0;
+}
+.dashboard .wrapReminders,
+.wrapHistorial {
+  background-color: #fff;
+  padding: 29px 29px 0 29px;
+}
+.dashboard .wrapReminders .alignRight,
+.wrapHistorial .alignRight {
+  text-align: right;
+}
+.dashboard .wrapReminders .title,
+.wrapHistorial .title {
+  font-size: 23px;
+}
+.dashboard .wrapReminders p,
+.wrapHistorial p {
+  margin: 0;
+}
+.dashboard .wrapReminders .addAction,
+.dashboard .wrapHistorial .addAction {
+  text-decoration: underline;
+  color: #000;
+}
+.dashboard .wrapReminders .vertical-align,
+.dashboard .wrapHistorial .vertical-align {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dashboard .wrapReminders .radio span,
+.dashboard .wrapHistorial .radio span {
+  display: block;
+}
+.dashboard .wrapReminders .radio label,
+.dashboard .wrapHistorial .radio label {
+  padding: 0;
+  font-weight: bold;
+}
+.dashboard .wrapReminders .rowReminder,
+.dashboard .wrapHistorial .rowReminder {
+  border-top: 1px solid #f2f2f2;
+}
+.dashboard .wrapReminders .actionTag,
+.dashboard .wrapHistorial .actionTag {
+  cursor: pointer;
+}
+.dashboard .modal-custom .modal-dialog {
+  width: 300px;
+}
+.dashboard .modal-custom .alignRight {
+  text-align: right;
+}
+.dashboard .modal-custom button {
+  margin: 0 0 10px 0;
+}
+.dashboard #searchEventModal .form-group {
+  margin-bottom: 23px;
+}
+.dashboard #searchEventModal .show-grid-row {
+  clear: both;
+  margin: 0;
+  padding: 5px 0 5px 0;
+}
+
+/* *******************************************************************************
+Event Search page - styles from event-search.css
+******************************************************************************** */
+
+.event-search .size-Smallest {
+  height: 40px;
+  width: 100px;
+}
+.event-search .size-Smallest .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.event-search .size-Smallest .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.event-search .size-Small {
+  height: 35px;
+  width: 135px;
+}
+.event-search .size-Small .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.event-search .size-Small .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.event-search .size-Medium {
+  height: 40px;
+  width: 180px;
+}
+.event-search .size-Medium .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.event-search .size-Medium .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.event-search .size-Large {
+  height: 50px;
+  width: 200px;
+}
+.event-search .size-Large .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.event-search .size-Large .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.event-search .size-ExtraLarge {
+  height: 50px;
+  width: 280px;
+}
+.event-search .size-ExtraLarge .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.event-search .size-ExtraLarge .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.event-search .size-Big {
+  height: 50px;
+  width: 330px;
+}
+.event-search .size-Big .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.event-search .size-Big .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.event-search .size-Full {
+  height: 50px;
+  width: 100%;
+}
+.event-search .size-Full .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.event-search .size-Full .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+#giftBackground.event-search {
+  background: #f7f3f0 url("../images/giftBackground.png") repeat;
+}
+#grayBackground.event-search {
+  background: #f0f0f0;
+}
+.event-search .modal:before,
+.event-search .modal content '',
+.event-search .modal display inline-block,
+.event-search .modal height 100%,
+.event-search .modal vertical-align middle,
+.event-search .modal margin-right -4px,
+.event-search .modal .modal-dialog,
+.event-search .modal text-align left,
+.event-search .modal button {
+  font-family: 'robotoCondensed';
+}
+.event-search .modal .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+body.event-search {
+  font-family: 'robotoCondensed';
+  font-size: 16px;
+  font-style: normal;
+}
+.event-search .container {
+  background: #fff;
+}
+.event-search .search {
+  height: 85vh;
+  margin-top: 30px;
+}
+.event-search .bodyEmployee {
+  height: 70%;
+}
+.event-search .mainTitle {
+  text-align: left;
+}
+.event-search .infoResult {
+  margin: 0;
+  font-size: 1em;
+  color: #808080;
+  padding: 0;
+}
+.event-search .infoResult label {
+  color: #dd0092;
+}
+.event-search .infoResult .numResult,
+.event-search .anchor {
+  color: #000;
+  font-size: 1.1em;
+}
+.event-search .anchor {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #808080;
+     -moz-text-decoration-color: #808080;
+          text-decoration-color: #808080;
+}
+.event-search .anchor label {
+  text-decoration: none;
+}
+.event-search .anchor .txtAchor {
+  color: #000;
+  margin-left: 2px;
+}
+.event-search .resultTitle {
+  margin: 0;
+}
+.event-search .resultTitle h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.event-search .paginator {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+     -moz-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.event-search .numberPaginator {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+}
+.event-search .listPaginator {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+  margin-bottom: 0;
+}
+.event-search .listPaginator li {
+  margin: 0 2px;
+}
+.event-search .listPaginator li:hover {
+  cursor: pointer;
+}
+.event-search .listResult {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+.event-search .listResult li {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -ms-flex-item-align: auto;
+      align-self: auto;
+  border-bottom: 1px solid #808080;
+  padding: 5px 0;
+}
+.event-search .listResult li:first-child {
+  border-top: 1px solid #808080;
+  padding: 0;
+}
+.event-search .listResult li:nth-child(2n+3) {
+  background: #f2efef;
+}
+.event-search .cell {
+  width: 10%;
+}
+.event-search .twice {
+  margin: 0;
+}
+.event-search .twice span {
+  display: block;
+}
+.event-search .firstColumn {
+  width: 40%;
+}
+.event-search .anchorPaginator {
+  color: #808080;
+}
+.event-search .anchorPaginator:hover {
+  cursor: pointer;
+}
+.event-search .anchor {
+  color: #000;
+  text-decoration: underline;
+}
+.event-search .anchor:hover {
+  cursor: pointer;
+}
+.event-search .active {
+  font-weight: bold;
+  color: #000;
+}
+.event-search .numPages {
+  color: #000;
+}
+.event-search .txtAchorPaginator {
+  color: #808080 !important;
+}
+.event-search .wrapLiverpoolLogo {
+  width: auto;
+}
+
+
+/* *******************************************************************************
+Day Tracker page - styles from dayTracker.css
+******************************************************************************** */
+
+.dayTracker .size-Smallest {
+  height: 40px;
+  width: 100px;
+}
+.dayTracker .size-Smallest .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.dayTracker .size-Smallest .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.dayTracker .size-Small {
+  height: 35px;
+  width: 135px;
+}
+.dayTracker .size-Small .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.dayTracker .size-Small .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.dayTracker .size-Medium {
+  height: 40px;
+  width: 180px;
+}
+.dayTracker .size-Medium .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.dayTracker .size-Medium .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.dayTracker .size-Large {
+  height: 50px;
+  width: 200px;
+}
+.dayTracker .size-Large .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.dayTracker .size-Large .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.dayTracker .size-ExtraLarge {
+  height: 50px;
+  width: 280px;
+}
+.dayTracker .size-ExtraLarge .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.dayTracker .size-ExtraLarge .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.dayTracker .size-Big {
+  height: 50px;
+  width: 330px;
+}
+.dayTracker .size-Big .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.dayTracker .size-Big .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.dayTracker .size-Full {
+  height: 50px;
+  width: 100%;
+}
+.dayTracker .size-Full .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.dayTracker .size-Full .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+#giftBackground.dayTracker {
+  background: #f7f3f0 url("../images/giftBackground.png") repeat;
+}
+#grayBackground.dayTracker {
+  background: #f0f0f0;
+}
+.dayTracker .modal:before,
+.dayTracker .modal content '',
+.dayTracker .modal display inline-block,
+.dayTracker .modal height 100%,
+.dayTracker .modal vertical-align middle,
+.dayTracker .modal margin-right -4px,
+.dayTracker .modal .modal-dialog,
+.dayTracker .modal text-align left,
+.dayTracker .modal button {
+  font-family: 'robotoCondensed';
+}
+.dayTracker .modal .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.dayTracker .dayTrakcerContent {
+  background: #fff;
+  margin-top: 20px;
+}
+.dayTracker .dayTrakcerContent h1 {
+  font-family: 'robotoCondensed';
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.dayTracker .dayTrackerTable {
+  border-top: 1px solid #ddd;
+  margin-top: 15px;
+}
+.dayTracker .dayTrackerTable tbody tr {
+  cursor: pointer;
+}
+.dayTracker .dayTrackerTable p {
+  line-height: 1.5;
+  margin: 0;
+}
+.dayTracker .dayTrackerTable th {
+  font-size: 14px;
+  padding-bottom: 5px !important;
+  padding-top: 5px !important;
+}
+.dayTracker .dayTrackerTable td {
+  vertical-align: middle !important;
+}
+.dayTracker .dayTrackerTable .icon-reloj {
+  color: #666;
+  font-size: 13px;
+  margin-right: 5px;
+}
+.dayTracker .resultsRegister {
+  text-align: right;
+}
+.dayTracker .resultsRegister p {
+  margin: 0;
+  padding-top: 20px;
+}
+.dayTracker .resultsRegister span {
+  color: #666;
+  font-weight: bold;
+}
+.dayTracker .searchRegister input,
+.dayTracker .searchRegister input:focus {
+  border: 1px solid #000;
+  border-right: none;
+  -moz-box-shadow: none;
+       box-shadow: none;
+  height: 40px;
+}
+.dayTracker .searchRegister span.btn {
+  border: 1px solid #000;
+  border-left: none;
+  height: 40px;
+  padding-top: 10px;
+}
+.dayTracker .searchRegister .icon-zoom {
+  color: #b3b3b3;
+}
+
+
+/* *******************************************************************************
+Create Event pages - styles from eventCreation.css
+******************************************************************************** */
+
+
+.eventCreation .size-Smallest {
+  height: 40px;
+  width: 100px;
+}
+.eventCreation .size-Smallest .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.eventCreation .size-Smallest .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.eventCreation .size-Small {
+  height: 35px;
+  width: 135px;
+}
+.eventCreation .size-Small .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.eventCreation .size-Small .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.eventCreation .size-Medium {
+  height: 40px;
+  width: 180px;
+}
+.eventCreation .size-Medium .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.eventCreation .size-Medium .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.eventCreation .size-Large {
+  height: 50px;
+  width: 200px;
+}
+.eventCreation .size-Large .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.eventCreation .size-Large .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.eventCreation .size-ExtraLarge {
+  height: 50px;
+  width: 280px;
+}
+.eventCreation .size-ExtraLarge .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.eventCreation .size-ExtraLarge .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.eventCreation .size-Big {
+  height: 50px;
+  width: 330px;
+}
+.eventCreation .size-Big .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.eventCreation .size-Big .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.eventCreation .size-Full {
+  height: 50px;
+  width: 100%;
+}
+.eventCreation .size-Full .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.eventCreation .size-Full .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+#giftBackground.eventCreation {
+  background: #f7f3f0 url("../images/giftBackground.png") repeat;
+}
+#grayBackground.eventCreation {
+  background: #f0f0f0;
+}
+.eventCreation .modal:before,
+.eventCreation .modal content '',
+.eventCreation .modal display inline-block,
+.eventCreation .modal height 100%,
+.eventCreation .modal vertical-align middle,
+.eventCreation .modal margin-right -4px,
+.eventCreation .modal .modal-dialog,
+.eventCreation .modal text-align left,
+.eventCreation .modal button {
+  font-family: 'robotoCondensed';
+}
+.eventCreation .modal .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.eventCreation .eventCreationContent {
+  background: #fff;
+  margin-top: 20px;
+}
+.eventCreation .eventCreationContent h1 {
+  text-align: center;
+}
+.eventCreation .eventCreationContent h2 {
+  display: inline-block;
+  margin-top: 25px;
+}
+.eventCreation .eventCreationContent .centerMe {
+  text-align: center;
+}
+.eventCreation .eventCreationContent .boxStyle {
+  padding-bottom: 20px;
+}
+.eventCreation .eventCreationContent .bottomNavigation {
+  padding: 10px;
+  border-top: 1px solid #808080;
+  margin-top: 20px;
+}
+.eventCreation .eventCreationContent .eventCreationChoose {
+  margin: 40px 2%;
+}
+.eventCreation .eventCreationContent .eventCreationChoose .descriptiveText {
+  min-height: 80px;
+}
+.eventCreation .eventCreationContent .eventCreationChoose .checkbox input {
+  display: inline-block;
+}
+.eventCreation .eventCreationContent .subtitleContract {
+  color: #666;
+  text-align: left;
+}
+.eventCreation .eventCreationContent .pdfContent {
+  border: 1px dashed #000;
+  max-height: 300px;
+  overflow: auto;
+  padding: 10px;
+  margin: 20px 10px;
+}
+.eventCreation .eventCreationContent .pdfContent p {
+  color: #666;
+  text-align: left;
+}
+.eventCreation .eventCreationContent .termsConditions {
+  padding: 15px 30px;
+}
+.eventCreation .eventCreationContent .termsConditions p,
+.eventCreationContent .termsConditions input {
+  display: inline-block;
+  float: left;
+}
+.eventCreation .eventCreationContent .buttonsPdf {
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+}
+.eventCreation .eventCreationContent .buttonsPdf i {
+  font-size: 25px;
+  float: right;
+  margin-top: 10px;
+  padding-left: 10px;
+  display: inline-block;
+  color: #666;
+}
+.eventCreation .eventCreationContent .innerButtons {
+  width: 100%;
+}
+.eventCreation .eventCreationContent button.btnPrimary {
+  float: right;
+}
+.eventCreation .eventCreationContent .selectDays button {
+  text-align: center;
+  margin-top: 20px;
+}
+.eventCreation .grid,
+.eventCreation .grid-centered-big,
+.eventCreation .grid-centered-medium,
+.eventCreation .grid-centered-small,
+.eventCreation .grid-centered,
+.eventCreation .grid-two-elements {
+  margin: 1.5em auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+  min-height: 1em;
+}
+.eventCreation .grid-centered-big {
+  -ms-grid-columns: 1fr 20fr 1fr;
+      grid-template-columns: 1fr 20fr 1fr;
+}
+.eventCreation .grid-centered-medium {
+  -ms-grid-columns: 1fr 5fr 1fr;
+      grid-template-columns: 1fr 5fr 1fr;
+}
+.eventCreation .grid-centered-small {
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+}
+.eventCreation .grid-centered {
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+.eventCreation .grid-two-elements {
+  grid-gap: 3px;
+  -ms-grid-columns: 10fr 0.1fr 10fr;
+      grid-template-columns: 10fr 0.1fr 10fr;
+}
+.eventCreation .btnSecondaryCustom {
+  background-color: #ccc;
+  height: 40px;
+  width: 100%;
+  margin: 0px;
+  border: none;
+  text-align: center;
+}
+.eventCreation .btnPrimaryCustom {
+  background-color: #000;
+  color: #fff;
+  height: 40px;
+  width: 100%;
+  margin: 0px;
+  border: none;
+  text-align: center;
+}
+.eventCreation .cSelect > label.error {
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  min-width: 200px;
+  text-align: left;
+  padding: 0;
+  display: inline-block;
+  margin-bottom: 5px;
+  max-width: 100%;
+}
+.eventCreation .cSelect {
+  margin-bottom: 35px;
+}
+.eventCreation .nmh {
+  margin: auto 0;
+}
+.eventCreation .nmv {
+  margin: 0 auto;
+}
+.eventCreation .alertError {
+  margin-bottom: 25px;
+}
+.eventCreation ..subtituloForm {
+  font-size: 1.2em;
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+.eventCreation .textForm {
+  font-family: 'Roboto Condensed', sans-serif !important;
+  margin: 0;
+}
+.eventCreation .contenedor-grid {
+  padding: 20px;
+}
+.eventCreation .materialStyle > label.label-up {
+  color: #000;
+  position: absolute;
+  top: -20px;
+  color: #333;
+  font-weight: 200;
+}
+.eventCreation .materialStyle > input.label-up {
+  padding: 0 0 0 5px;
+  height: 35px;
+}
+.eventCreation .gris {
+  color: #6a6a6a !important;
+}
+.eventCreation .colorLiverpool {
+  color: #e10098;
+  font-size: 1.5em;
+}
+.eventCreation .text-small-bold {
+  font-family: 'Roboto Condensed', sans-serif !important;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.eventCreation .h35 {
+  height: 35px;
+}
+.eventCreation .centrado-vertical {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.eventCreation .mb-10 {
+  margin-bottom: 10px;
+}
+.eventCreation .abel.invalid,
+label.error {
+  color: #f00;
+  font-weight: 200;
+}
+.eventCreation input.invalid,
+input.error,
+select.error {
+  border: 1px solid #f00;
+}
+.eventCreation .botonesSeparados {
+  margin: 15px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.eventCreation a#cerrarMensaje {
+  cursor: pointer;
+}
+.eventCreation .text-centered {
+  text-align: center;
+}
+.eventCreation .text-right {
+  text-align: right;
+}
+.eventCreation .title {
+  font-family: 'Roboto Condensed', sans-serif !important;
+  font-size: 2em;
+}
+.eventCreation p.parrafo {
+  font-size: 1.1em;
+  text-align: justify;
+  font-weight: 300;
+}
+.eventCreation .centered {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.eventCreation .container-full {
+  width: 100%;
+  min-height: 20px;
+}
+.eventCreation .white {
+  background-color: #fff;
+}
+.eventCreation .red {
+  background-color: #f00;
+}
+.eventCreation .shadow {
+  -moz-box-shadow: 0 0 8px #ccc;
+       box-shadow: 0 0 8px #ccc;
+}

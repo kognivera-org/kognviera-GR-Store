@@ -1,0 +1,1456 @@
+/*Common CSS*/
+/* To handle different fonts on different pages. */
+* {
+    font-family: 'robotoRegular',Arial, Helvetica, sans-serif;
+}
+a, button {
+    cursor: pointer;
+}
+body {
+    font-size: 14px !important;
+}
+.mr15{
+    margin-right: 15px !important;
+}
+.mb15{
+    margin-bottom: 15px !important;
+}
+.mt15{
+    margin-top: 15px !important;
+}
+p.error{
+    color: #f00;
+}
+.display-block{
+    display: block !important;
+}
+.display-none{
+    display: none !important;
+}
+.display-inline-block{
+    display: inline-block !important;
+}
+.downloadprint-overlay{
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.display-hidden {
+    overflow: hidden;
+    height: 0;
+}
+.normalFontWeight{
+    font-weight: normal;
+}
+/* css for pdf content */
+/* div[id^="divGenerateHtmlDownloadPrint"]{
+    width: 100%;
+} */
+div[id^="divGenerateHtmlDownloadPrint"] .eventSummary {
+    margin: 15px 30px !important;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .m-30 {
+    margin: 30px;
+}
+
+div[id^="divGenerateHtmlDownloadPrint"] .mainContainer .container-fluid .row {
+    margin-left: 15px; 
+    margin-right: 15px;
+}
+/* 
+div[id^="divGenerateHtmlDownloadPrint"] .container-fluid tr {
+    display: table-row !important;
+}
+
+div[id^="divGenerateHtmlDownloadPrint"] .container-fluid tr td {
+    display: table-cell !important;
+} */
+
+div[id^="divGenerateHtmlDownloadPrint"] .pdfContent {
+    border: none !important;
+    overflow: visible !important;
+    min-height: none !important;
+    max-height: none !important;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .display-hidden {
+    display: block;
+    overflow: visible;
+    height: auto;
+}
+ 
+div[id^="divGenerateHtmlDownloadPrint"] div.col-xs-12.signature {
+    display:block;
+    padding: 120px 0 0 0;
+}
+
+/* div[id^="divGenerateHtmlDownloadPrint"] .personalpurchaselist .cTable img, div[id^="divGenerateHtmlDownloadPrint"] .personalpurchaselist .cTable img.img-detail, 
+div[id^="divGenerateHtmlDownloadPrint"] .receivedGifts .cTable img, div[id^="divGenerateHtmlDownloadPrint"] .receivedGifts .cTable img.img-detail {
+    width: auto !important;
+    max-height: 112px !important;
+} */
+
+.personalpurchaselist .cTable img, .personalpurchaselist .cTable img.img-detail, 
+.receivedGifts .cTable img, .receivedGifts .cTable img.img-detail {
+    width: auto !important;
+    height: 90px !important;
+    max-width: none;
+}
+
+.regalosRegistradosList .cTable .imgProduct img {
+    width: auto !important;
+    height: 62px !important;
+}
+
+div[id^="divGenerateHtmlDownloadPrint"] div.col-xs-12.signature > div > p {
+    border-top: 2px solid black;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+div[id^="divGenerateHtmlDownloadPrint"] tr, div[id^="divGenerateHtmlDownloadPrint"] tr td {
+    display: inline-block!important;
+}
+
+/* div[id^="divGenerateHtmlDownloadPrint"] tr {
+    display: inline-block!important;
+} */
+div[id^="divGenerateHtmlDownloadPrint"] tr td:before {
+    display: block!important;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .mainContainer tr {
+    display: table-row!important;
+}
+
+div[id^="divGenerateHtmlDownloadPrint"] .mainContainer tr td {
+    display: table-cell!important;
+}
+
+div[id^="divGenerateHtmlDownloadPrint"] tr:after, div[id^="divGenerateHtmlDownloadPrint"] th:after {
+    display: block;
+    height: 0px;
+    visibility: hidden;
+}
+
+div[id^="divGenerateHtmlDownloadPrint"] thead {
+    display: table-header-group;
+}
+div[id^="divGenerateHtmlDownloadPrint"] tr {
+    page-break-inside: avoid;
+    width: 100%;
+}
+
+div[id^="divGenerateHtmlDownloadPrint"] .productsForDevolutionContent .product, 
+div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .product {
+    margin: 20px 0 0 0;
+    width: 100%;
+    border: 1px solid #dedede;
+    box-shadow: 0 0 8px #ccc;
+    -moz-box-shadow: 0 0 8px #ccc;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .productsForDevolutionContent .product .tbl-total {
+    text-align: right;
+    font-weight: bold;
+    color: #888;
+    font-size: 23px;
+}
+
+div[id^="divGenerateHtmlDownloadPrint"] .productsForDevolutionContent .product thead,
+div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .product thead {
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .productsForDevolutionContent .product tr,
+div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .product tr {
+    text-align: center;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .productsForDevolutionContent .product tr td,
+div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .product tr td {
+    padding: 7px;
+    color: #333;
+}
+
+/* event details */
+div[id^="divGenerateHtmlDownloadPrint"] .wrapPanel .listOfArticle tr td:first-child .table-column {
+    width: 93px;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .wrapPanel .listOfArticle tr td:nth-child(2) .table-column {
+    width: 188px;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .wrapPanel .listOfArticle tr td:nth-child(3) .table-column {
+    width: 333px;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .wrapPanel .listOfArticle tr td:nth-child(4) .table-column {
+    width: 248px;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .wrapPanel .listOfArticle tr td:nth-child(5) .table-column {
+    width: 248px;
+}
+
+/* div[id^="divGenerateHtmlDownloadPrint"] .productsForDevolutionContent .product tr td */
+div[id^="divGenerateHtmlDownloadPrint"] .productsForDevolutionContent .product tr td:first-child {
+    width: 18.16%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .productsForDevolutionContent .product tr td:nth-child(2) {
+    width: 13.24%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .productsForDevolutionContent .product tr td:nth-child(3) {
+    width: 21.36%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .productsForDevolutionContent .product tr td:nth-child(4) {
+    width: 11.96%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .productsForDevolutionContent .product tr td:nth-child(5) {
+    width: 11.21%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .productsForDevolutionContent .product tr td:nth-child(6) {
+    width: 11.96%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .productsForDevolutionContent .product tr td:nth-child(7) {
+    width: 12.07%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .productsForDevolutionContent .product tr:last-child td:first-child {
+    text-align: right;
+    font-weight: bold;
+    color: #888;
+    font-size: 23px;
+    width: 953px
+}
+
+div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .totalLabel {
+    padding: 7px;
+    margin: 15px 0 0 0;
+    font-weight: bold;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .totalLabel div:first-child div:first-child {
+    width: 60%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .totalLabel div:first-child div:nth-child(2) {
+    width: 40%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .totalLabel div:first-child div:first-child p {
+    float: right;
+    text-align: right;
+    margin-right: -30px;
+}
+/* div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .totalLabel div:nth-child(2) p {
+    margin-right: 20px;
+} */
+div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .product tr td:first-child {
+    width: 18.16%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .product tr td:nth-child(2) {
+    width: 13.24%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .product tr td:nth-child(3) {
+    width: 21.36%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .product tr td:nth-child(4) {
+    width: 11.96%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .product tr td:nth-child(5) {
+    width: 11.21%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .product tr td:nth-child(6) {
+    width: 11.96%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .product tr td:nth-child(7) {
+    width: 12.07%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .product tr td:nth-child(8) {
+    width: 0;
+    display: none!important;
+}
+
+
+div[id^="divGenerateHtmlDownloadPrint"] .searchResultContent .totalLabel .row {
+    margin-right: 12px;
+}
+
+/* account statement summary */
+div[id^="divGenerateHtmlDownloadPrint"] .container-fluid .bodytable {
+    border: none;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .container-fluid .bodytable tr td:first-child {
+    width: 16.71%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .container-fluid .bodytable tr td:nth-child(2) {
+    width: 18.73%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .container-fluid .bodytable tr td:nth-child(3) {
+    width: 21.63%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .container-fluid .bodytable tr td:nth-child(4) {
+    width: 18.73%;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .container-fluid .bodytable tr td:nth-child(5) {
+    width: 23.3%;
+}
+
+div[id^="divGenerateHtmlDownloadPrint"] tr td .table-column {
+    page-break-inside: avoid;
+}
+
+div[id^="divGenerateHtmlDownloadPrint"] .container-fluid .tableResults tr td:first-child .table-column {
+    width: 114px;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .container-fluid .tableResults tr td:nth-child(2) .table-column {
+    width: 495px;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .container-fluid .tableResults tr td:nth-child(3) .table-column {
+    width: 79px;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .container-fluid .tableResults tr td:nth-child(4) .table-column {
+    width: 65px;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .container-fluid .tableResults tr td:nth-child(5) .table-column {
+    width: 245px;
+}
+div[id^="divGenerateHtmlDownloadPrint"] .container-fluid .tableResults tr td:nth-child(6) .table-column {
+    width: 100px;
+}
+
+/* registered gifts */
+/* #divGenerateHtmlDownloadPrint .little-text {
+    font-size: 11px;
+} */
+
+#divGenerateHtmlDownloadPrint .personalpurchaselist .cTable img, #divGenerateHtmlDownloadPrint .personalpurchaselist .cTable img.img-detail, 
+#divGenerateHtmlDownloadPrint .receivedGifts .cTable img, #divGenerateHtmlDownloadPrint .receivedGifts .cTable img.img-detail,  #divGenerateHtmlDownloadPrint .listOfArticle img {
+    width: auto !important;
+    height: 84px !important;
+    max-width: none;
+}
+
+#divGenerateHtmlDownloadPrint .regalosRegistradosList .cTable td:first-child {
+    width: 60px;
+}
+#divGenerateHtmlDownloadPrint .regalosRegistradosList .cTable td:nth-child(2) {
+    width: 40px;
+}
+#divGenerateHtmlDownloadPrint .regalosRegistradosList .cTable td:nth-child(3) {
+    width: 112px;
+}
+#divGenerateHtmlDownloadPrint .regalosRegistradosList .cTable td:nth-child(4) {
+    width: 340px;
+}
+#divGenerateHtmlDownloadPrint .regalosRegistradosList .cTable td:nth-child(5) {
+    width: 80px;
+}
+#divGenerateHtmlDownloadPrint .regalosRegistradosList .cTable td:nth-child(6) {
+    width: 60px;
+}
+#divGenerateHtmlDownloadPrint .regalosRegistradosList .cTable td:nth-child(7) {
+    width: 100px;
+}
+#divGenerateHtmlDownloadPrint .regalosRegistradosList .cTable td:nth-child(8) {
+    width: 180px;
+}
+#divGenerateHtmlDownloadPrint .regalosRegistradosList .cTable td:nth-child(9) {
+    width: 100px;
+}
+
+/* received gifts */
+/* #divGenerateHtmlDownloadPrint .img-detail {
+    width: auto;
+} */
+/*#divGenerateHtmlDownloadPrint .receivedGifts .cTable td:first-child {
+    width: 200px;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts .cTable td:nth-child(2) {
+    width: 255px;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts .cTable td:nth-child(3) {
+    width: 101px;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts .cTable td:nth-child(4) {
+    width: 72px;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts .cTable td:nth-child(5) {
+    width: 250px;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts .cTable td:nth-child(6) {
+    width: 122px;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts .cTable td:nth-child(7) {
+    width: 100px;
+}*/
+#divGenerateHtmlDownloadPrint .receivedGifts .cTable td:first-child {
+    width: 18%;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts .cTable td:nth-child(2) {
+    width: 23%;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts .cTable td:nth-child(3) {
+    width: 10%;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts .cTable td:nth-child(4) {
+    width: 6.5%;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts .cTable td:nth-child(5) {
+    width: 22.5%;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts .cTable td:nth-child(6) {
+    width: 11%;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts .cTable td:nth-child(7) {
+    width: 9%;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts.nobonus .cTable td:first-child {
+    width: 20%;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts.nobonus .cTable td:nth-child(2) {
+    width: 26.5%;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts.nobonus .cTable td:nth-child(3) {
+    width: 11%;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts.nobonus .cTable td:nth-child(4) {
+    width: 7%;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts.nobonus .cTable td:nth-child(5) {
+    width: 25.5%;
+}
+#divGenerateHtmlDownloadPrint .receivedGifts.nobonus .cTable td:last-child {
+    width: 10%;
+}
+
+/* personal purchase */
+#divGenerateHtmlDownloadPrint .personalpurchaselist .cTable td:first-child {
+    width: 12%;
+}
+#divGenerateHtmlDownloadPrint .personalpurchaselist .cTable td:nth-child(2) {
+    width: 32%;
+}
+#divGenerateHtmlDownloadPrint .personalpurchaselist .cTable td:nth-child(3) {
+    width: 7%;
+}
+#divGenerateHtmlDownloadPrint .personalpurchaselist .cTable td:nth-child(4) {
+    width: 7.5%;
+}
+#divGenerateHtmlDownloadPrint .personalpurchaselist .cTable td:nth-child(5) {
+    width: 28.5%;
+}
+#divGenerateHtmlDownloadPrint .personalpurchaselist .cTable td:nth-child(6) {
+    width: 13%;
+}
+
+#divGenerateHtmlDownloadPrint .personalpurchaselist.nobonus .cTable td:first-child {
+    width: 10%;
+}
+#divGenerateHtmlDownloadPrint .personalpurchaselist.nobonus .cTable td:nth-child(2) {
+    width: 40%;
+}
+#divGenerateHtmlDownloadPrint .personalpurchaselist.nobonus .cTable td:nth-child(3) {
+    width: 8%;
+}
+#divGenerateHtmlDownloadPrint .personalpurchaselist.nobonus .cTable td:nth-child(4) {
+    width: 8.5%;
+}
+#divGenerateHtmlDownloadPrint .personalpurchaselist.nobonus .cTable td:nth-child(5) {
+    width: 33.5%;
+}
+
+/* disabled dates shouldnt be highlighted on hover */
+.bootstrap-datetimepicker-widget table td.disabled, .bootstrap-datetimepicker-widget table td.disabled:hover {
+    background: #f0f0f0 !important;
+}
+
+.registeredgifts div[id^="divGenerateHtmlDownloadPrint"] .nav-wrap, .personalpurchase div[id^="divGenerateHtmlDownloadPrint"] .nav-wrap, 
+.receivedgifts div[id^="divGenerateHtmlDownloadPrint"] .nav-wrap, .eventdetails div[id^="divGenerateHtmlDownloadPrint"] .nav-wrap {
+    display: none;
+}
+
+.eventSummary .titleSection {
+    text-align: center
+}
+
+.eventCreationContent .toPrint .pdfContent {
+    max-height: none !important;
+}
+
+.cSelect > label.error {
+    position: absolute !important;
+    left: 0px !important;
+    top: 40px !important;
+    min-width: 200px !important;
+    text-align: left !important;
+    padding: 0 !important;
+    display: inline-block !important;
+    margin-bottom: 15px !important;
+    max-width: 100% !important;
+}
+
+/* .toPrint {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+} */
+/*tooltip*/
+.tooltip-container {
+    position: relative;
+}
+.tooltip-container:hover .tooltip-box {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip-box {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 999;
+    top:180%;
+    left:50%;
+    padding: 10px 5px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 200px;
+    margin-left: -100px;
+    transition:visibility 0.2s linear, opacity 0.2s linear;
+    line-height: 1.42857143;
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+}
+.tooltip-box:after, .tooltip-box:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.tooltip-box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px;
+}
+.tooltip-box:before {
+    border-color: rgba(204, 204, 204, 0);
+    border-bottom-color: #ccc;
+    border-width: 11px;
+    margin-left: -11px;
+}
+/*tooltip*/
+/*END Common CSS*/
+
+.addressRow > div:last-of-type {
+    display: block !important;
+}  
+
+/* Overriding accountEdit class in editEvent file*/
+.accountEdit {
+     display: block !important;
+}
+
+/* accountInfoCelebrated.css: 288 */
+.accountInfoCelebratedContent .alertError {
+    display: block !important;
+} 
+
+/* event-address-info.css */
+.addressBlock .more {
+    display: block !important;      
+}
+.addressBlock * {
+    font-family: 'robotoCondensed';
+    text-transform: capitalize;
+}
+/* Overriding personalPurchase.css:335 */
+ul.listaselect {
+    display: block !important;
+}
+
+/*  */
+.numberPaginator {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.numberPaginator .listPaginator {
+    list-style-type: none;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 0;
+    margin-bottom: 0;
+}
+.numberPaginator .listPaginator li {
+    margin: 0 2px;
+}
+.numberPaginator .anchorPaginator {
+    color: #808080;
+}
+.numberPaginator .anchorPaginator.active {
+    font-weight: bold;
+    color: #000;
+}
+/* Download and print icon */
+.linkPlatform li {
+    display: inline-block;
+}
+
+.linkPlatform {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.linkPlatform li a i {
+    color: #000;
+    font-size: 35px;
+    padding: 0px;
+}
+
+.registeredgifts .linkPlatform li a i {
+    padding: 7px !important;
+}
+
+.numberPaginator .anchorPaginator:hover {
+    cursor: pointer;
+}
+
+.innerDevolutions .iconWrap a {
+    padding: 0px !important;
+  }
+
+/* Overriding eventDashboard.css:236 
+.bootstrap-datetimepicker-widget {
+    display: none;
+}*/
+
+/* eventDashboard.css:150 gifts */
+.detailOn, .detailOnAction {
+    margin: 5px 0 !important;
+}
+
+/* Overriding bootstrap-datetimepicker.css:9 */
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    display: block;
+}
+/* 
+Remove verification_documents.css 120
+body {
+    font-family: 'robotoCondensed';
+    font-size: 16px;
+    font-style: normal;
+} */
+
+/* Change position to relative and add margin 20px eventDate.css:37. Move edit button <i> inside <p> */
+.editName {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    left: 230px;
+    top: 40px;
+    margin-left: 20px;
+    position: inherit !important;
+}
+
+/* Overriding accountInfoCelebrated.css */
+#newCelebrated-2,
+#formUserAlerts-2,
+#dataCelebrated-2,
+#dataManagement-2,
+#userRegistryManagement-2 {
+  display: block !important;
+}
+#newCelebrated-3,
+#formUserAlerts-3,
+#dataCelebrated-3,
+#dataManagement-3,
+#userRegistryManagement-3 {
+    display: block !important;
+}
+
+/* Overriding .main overflow hidden genericComponent.css */
+.main {
+    overflow: visible !important;
+}
+
+.formUser .whiteTooltip + .tooltip > .tooltip-inner {
+    background-color: #fefefe;
+    -moz-box-shadow: 0 0 2px 2px #ddd;
+    box-shadow: 0 0 2px 2px #ddd;
+    color: #000;
+    padding: 5px;
+    text-align: left;
+}
+
+.formUser .whiteTooltip + .tooltip > .tooltip-arrow {
+    border-bottom-color: #fefefe;
+}
+
+
+.formUser .tooltip.bottom {
+    margin-left: -79px;
+    margin-top: -4px;
+}
+
+/* Overriding for error messages*/
+/* hide search field for event creation */
+.eventCreation .wrapSearch { visibility: hidden }
+
+.eventCreation .wrap-address label {
+    font-weight: bold !important;
+}
+
+.eventCreation label, .eventCreation.addnewaddress .wrap-address label {
+    font-weight: normal !important;
+}
+
+.eventCreation input.inputMaterial:disabled, .addAddressForm input.inputMaterial:disabled {
+    padding: 6px 0 6px 5px;
+}
+
+/* Overriding for createEvent flow*/
+.eventCreation .radio label, .checkbox label {
+    padding-left: 5px !important;
+}
+
+.eventCreation .wrap-address .checkbox label, .eventCreation .wrap-address .radio label {
+    padding-left: 0 !important;
+}
+
+.eventCreation .eventCreationChoose .radio label, .checkbox label {
+    padding-left: 20px !important;
+}
+.eventCreation .btnSecondaryCustom {
+    background-color: #ccc;
+    height: 40px;
+    width: 100%;
+    margin: 0px;
+    border: none;
+    text-align: center;
+}
+
+.eventCreation .btnPrimaryCustom {
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+    width: 100%;
+    margin: 0px;
+    border: none;
+    text-align: center;
+}
+
+.eventCreation .grid-two-elements {
+    grid-gap: 3px !important;
+    -ms-grid-columns: 10fr 0.1fr 10fr;
+    grid-template-columns: 10fr 0.1fr 10fr;
+}
+
+.eventCreation .grid-centered-big {
+    -ms-grid-columns: 1fr 20fr 1fr;
+    grid-template-columns: 1fr 20fr 1fr;
+}
+
+.eventCreation .grid, .grid-centered-big, .grid-centered-medium, .grid-centered-small, .grid-centered, .grid-two-elements {
+    margin: 1.5em auto;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1em;
+    min-height: 1em;
+}
+
+.eventCreation .cSelect.select-error{
+    margin-bottom: 35px;
+}
+
+.eventCreation .cSelect > label.error {
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    min-width: 200px;
+    text-align: left;
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+
+.eventCreation .employee .alertSuccess {
+    margin-top: 15px;
+}
+
+.eventCreation p.parrafo {
+    font-size: 1.1em;
+    text-align: justify;
+    font-weight: 300;
+}
+
+/* for datetime star */
+.input-group label.placeHolderMaterial span {
+    color: #f00;
+}
+
+/* login.css line 159 */
+.loginContent .errorLoginForm {
+    display: block !important;
+}
+
+.messagesBlock .alertSuccess{
+    display: block !important;
+}
+.printPage .pdfclass {
+    display: flex;
+}
+/* .pdfclass .LPLogo {
+    margin-right: 60%;
+} */
+.pdfclass img{ 
+    width: 150px;
+}
+
+/* Adding here because it is added in eventData and not in maindashboard.css This component is required on dashboard. */
+#storeModal .modal-dialog {
+    width: 25%;
+}
+/* #storeModal h4 {
+    font-weight: 900;
+} */
+#storeModal p {
+    color: #81898c;
+}
+.requiredLabel {
+    color: #f00 !important;
+    text-align: right;
+    margin-bottom: 0;
+}
+/* notes */
+.deletenote.iClass.icon-cerrar {
+    font-size: 1.3em;
+}
+/* for note having length more than 60 char */
+.noteOverflow{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 60ch;
+}
+/* for notes: when number of notes exceed the size of the div */
+.hideExtraNotes{
+    max-height: 250px;
+    overflow-y: scroll;
+    overflow: auto;
+}
+
+/* for overflowing address in dashboard in opening and closing gift */
+.openingAndClosingAddressHide{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+/* for date range */
+td.day.activeRange {
+    background-color: #e100a024;
+    border-radius: 0 !important;
+}
+
+
+.eventDashboard .btnSecondaryCustom, .atc .btnSecondaryCustom, .addReminder .btnSecondaryCustom {
+    background-color: #ccc;
+    height: 40px;
+    width: 100%;
+    margin: 0px;
+    border: none;
+    text-align: center;
+}
+
+.eventDashboard .btnPrimaryCustom, .atc .btnPrimaryCustom, .addReminder .btnPrimaryCustom {
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+    width: 100%;
+    margin: 0px;
+    border: none;
+    text-align: center;
+}
+
+.eventDashboard .grid-two-elements, .atc .grid-two-elements, .addReminder .grid-two-elements {
+    grid-gap: 3px !important;
+    -ms-grid-columns: 10fr 0.1fr 10fr;
+    grid-template-columns: 10fr 0.1fr 10fr;
+}
+
+.eventDashboard .grid-centered-big, .atc .grid-centered-big, .addReminder .grid-centered-big {
+    -ms-grid-columns: 1fr 20fr 1fr;
+    grid-template-columns: 1fr 20fr 1fr;
+}
+
+.eventDashboard .grid, .atc grid, .grid-centered-big, .grid-centered-medium, .grid-centered-small, .grid-centered, .grid-two-elements {
+    margin: 1.5em auto;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1em;
+    min-height: 1em;
+}
+
+/* plastic card error css */
+.contentAddedCards .cardModalRow label.error {
+    font-weight: normal!important;
+    color: #f00!important;
+}
+
+/*---------Account Transfererence And Closure---------*/
+.table-body{
+    height: auto !important;
+}
+.table-header{
+    margin-top: auto !important;
+}
+.input-group-error-label{
+    color: #f00;
+    width: 80%;
+}
+.account-iconWrap {
+    margin: 10px 0;
+    text-align: right;
+}
+.account-iconWrap a {
+    padding: 7px;
+    font-size: 22px !important;
+    display: inline-block;
+    color: #000;
+    /* margin: 0 4px; */
+    cursor: pointer;
+}
+.account-iconWrap a:hover {
+    text-decoration: none;
+}
+/* Loading Icon & Tex */
+.account-iconWrap span{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transform: translate(30px, 16px);
+  color: #ccc;
+  z-index: -1;  
+}
+
+.account-iconWrap span img{
+  transform: translateX(-25px);
+  width: 80px;
+}
+.pdm {
+    max-height: 20px;
+    position: absolute;
+    bottom: 22px;
+    right: 15px;
+}
+.pdm .loading {
+    font-size: 14px;
+    color: #ccc;
+}
+.pdm .loading img {
+    transform: translateX(-2px);
+    padding: 0;
+    width: 25px;
+    object-fit: cover;
+}
+
+.bonusApplicableStatus{ 
+    display: block !important; 
+    text-align: center;
+} 
+.bonusApplicableStatus span.iClass { 
+    left: auto; 
+}
+.bonusApplicableStatus .icon-info{ 
+    top:0;
+}
+.messageDetail.onTransit:hover{
+    color: #23527c;
+}
+.wrapTransference .radio label{
+    padding-left: 5px;
+}
+.monedero-savedwallets-options{
+    margin-left: 55px;
+}
+.quantityBlock .input-group-addon {
+    background: #fff;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-right: 0;
+    color: #000;
+    font-weight: bold;
+}
+.quantityBlock .materialStyle.input-group-dollar {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.quantityBlock .materialStyle.input-group-dollar input {
+    border-left: none;
+}
+.quantityBlock .materialStyle.input-group-error{
+    border: 1px solid #f00;
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.quantityBlock .materialStyle.input-group-error span {
+    border: none;
+}
+.quantityBlock .materialStyle.input-group-error input {
+    border: none;
+}
+.quantityBlock label {
+    left: 35px;
+}
+/* sortdownicon */
+.centeredh span .icon-flecha_filtros_abajo{
+    font-size: 10px;
+    padding: 0 0 0 10px;
+    color: #888;
+}
+/* sortdownicon */
+
+/* downloadable table */
+.tableResults-div {
+    border: 1px solid #d8d8d8;
+    margin-top: 20px;
+    padding: 0;
+}
+.tableResults-div .tableResults {
+    margin: 0;
+}
+.account-iconWrap .linkPlatform li a i {
+    font-size: 22px !important;
+}
+/* downloadable table */
+.closingGiftPanel .border-right{
+    border-right: 2px solid #d4d4d4;
+}
+/*ActivatePhysicalMonederoModal*/
+#activatePhysicalMonederoModal .primaryLink {
+    cursor: pointer;
+    color: #e10098;
+}
+#activateWallet {
+    margin:0px;
+}
+.p-l-0 {
+    padding-left: 0 !important;
+}
+.p-l-15 {
+    padding-left: 15px !important;
+}
+.p-r-0 {
+    padding-right: 0 !important;
+}
+
+.m-l-0 {
+    margin-left: 0 !important;
+}
+.m-r-0 {
+    margin-right: 0 !important;
+}
+.m-l-100 {
+    margin-left: 100px!important;
+}
+.borderLabel .congratzText .tabsText {
+    padding-top: 15%;
+}
+.purchasedItemDetails .detailSKU.tooltip-container{
+    color: #888;
+    font-size: 14px;
+    font-family: 'icomoon';
+    font-style: normal;
+}
+.greytext {
+    color: #888 !important;
+}
+
+.cerrarmesa-modal .modal-dialog {
+    width:450px;
+}
+.cerrarmesa-modal .modal-dialog .modal-body {
+   padding-top: 0;
+}
+.cerrarmesa-modal .modal-dialog .modal-header {
+    border-bottom:0;
+}
+.cerrarmesa-modal .modal-dialog .modal-header .close{
+    background: #888;
+    text-align: center;
+    padding: 0px 4px;
+    border-radius: 50%;
+    opacity: 1;
+    color: #fff;
+    font-weight: normal;
+}
+.cerrarmesa-modal .modal-dialog .modal-header .close span{
+   padding: 0;
+}
+.cerrarmesa-modal .modal-dialog .modal-header .modal-title {
+    background-color:transparent;
+    color: #000;
+    font-weight: bold;
+    padding: 0;
+}
+
+/*END Account Transfererence And Closure*/
+
+/* START:registered giftlist tooltip on hover  */
+.notAvailable .whiteTooltip + .tooltip > .tooltip-inner {
+    background-color: #fefefe;
+    -moz-box-shadow: 0 0 2px 2px #ddd;
+    box-shadow: 0 0 2px 2px #ddd;
+    color: #000;
+    padding: 5px;
+    text-align: left;
+}
+
+.notAvailable .whiteTooltip + .tooltip > .tooltip-arrow {
+    border-bottom-color: #fefefe;
+}
+
+
+.notAvailable .tooltip.bottom {
+    margin-left: -79px;
+    margin-top: -4px;
+}
+
+.tooltip-inner {
+    color: #000;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #ccc;
+}
+/* END: registered giftlist tooltip on hover  */
+
+/*Start:  Event management-- Fraud management  */
+.fraudBox{
+    max-height: 70px;
+    height: 70px;
+    min-height: 70px;
+    margin-bottom: 20px;
+}
+
+.btnLong{
+    width: 187px;
+}
+/* END: Event management-- Fraud management  */
+
+/* for pannel css in plastic card dashboard */
+/* .plasticCard .panel-collapse , .withdraw .panel-collapse , .openingAndClosing .panel-collapse {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.plasticCard .collapse, .withdraw .collapse, .openingAndClosing .collapse {
+    display: block!important;
+} */
+/* END: Event management-- Fraud management  */
+/* END: Event management-- Fraud management  */
+
+/* report instore module */
+.newReportContainer .cSelect > label.error, .input-group label.error {
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    min-width: 200px;
+    text-align: left;
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 25px;
+    max-width: 100%;
+    color: #f00;
+ }
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+/* ui control */
+a.uic, a.uic:hover, a.uic:active {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+a.white, a.white:hover, a.white:active, a.white:visited {
+    color: #fff !important;
+}
+a, a:hover, a:active, a:visited{
+    color: #000; /* temporary overriding bootstrap css */
+    text-decoration: none;
+}
+a[disabled], button[disabled], input[disabled], select[disabled], form[disabled], label[disabled] {
+    opacity: 0.5 !important;
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+}
+
+/* Overlay */
+div.globalOverlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+/* eventDashboard.css 190*/
+.contentRetire {
+    min-height: auto;
+    height: auto;
+}
+
+/* event Management contract print title  */
+.eventManagementContract{
+    text-align: center;
+}
+
+/* event Management registered address-assign celeb   */
+.addressBlock .cSelect .error{
+    color: red;
+}
+
+/* event dashboard  deletePlaticCard */
+.deletePlaticCard div{
+    text-align: center
+}
+
+label.error {
+    color: red !important;
+    font-weight: 500;
+    font-size: 0.95em;
+}
+/* regalosRegistradosList parent div*/
+.regalosRegistradosList {
+    margin: 25px 0;
+}
+/* registered gift list error message */
+#registerModal .materialStyle {
+    margin-bottom: 30px;
+}
+#registerModal label.error {
+    position: absolute;
+    left: 0px;
+    min-width: 200px;
+    text-align: left;
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+#registerModal .cSelect label.error {
+    top: 40px;
+}
+#registerModal .cSelect.select-error {
+    margin-bottom: 35px;
+}
+/* LISTA DE REGALOS brandfilter */
+.giftList li.active {
+    border-bottom: 5px solid #e10098;
+    padding-bottom: 4px;
+}
+.giftList li {
+    margin: 0 2px;
+}
+
+.row.filtersWrapper .selectAll #boxSquareAll + label {
+    padding-left:0 !important;
+}
+/* error message on address selection page - change event type */
+.addressDropdown .error {
+    width: 270px;
+}
+
+/* event gralinfo */
+.more button.size-Medium{
+    margin: 30px 0 -5px;
+}
+
+/* css for tool tip in edit owner and co-owner */
+.showPopOver{
+    display: block;
+    top: -51px;
+}
+
+/* image on regalos registrados genericComponent.css:1566 */
+.cTable tr td.imgProduct {
+    padding: 20px;
+}
+
+/* START: Verification Documents UI */
+.wrapperFiles { /* overriding verification_documents.css:168 */
+    width: 50% !important;
+}
+.row.vFileList {
+    margin: 0;
+    padding: 5px 0;
+}
+.vFileList .vFileOp {
+    text-align: left;
+    font-size: 1.8em;
+    float: right;    
+}
+.vFileList .vFile, .vFileList .vFileOp {
+    padding: 0;
+    height: 35px;
+    line-height: 35px;
+}
+.vFileList .vFile {
+    background: #f0f0f0;
+    padding: 0 5px;
+}
+.file.iClass.icon-cerrar {
+    font-size: 0.7em;
+  }
+.vFileList .icon-cerrar:after { /* overriding verification_documents.css:230 */
+    content: "\e910";
+    margin-top: 7px;
+    margin-right: 9.5px;
+}
+.lblFileUp {
+    line-height: 3em;
+    width: 70% !important;
+}
+.vFile a.uic {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1.5px solid black;
+}
+/* END: Verification Documents UI */
+
+/* date picker changes */
+.bootstrap-datetimepicker-widget table th.picker-switch, .table-condensed>thead>tr>th.dow {
+    text-transform: capitalize;
+}
+.bootstrap-datetimepicker-widget table td.disabled:before {
+    border-bottom-color: #f0f0f0;
+}
+.bootstrap-datetimepicker-widget table td.disabled {
+    background-color: #f0f0f0;
+    border-radius: 0;
+}
+/* .bootstrap-datetimepicker-widget table td.today {
+    box-shadow: 2px 2px 3px #ccc;
+    background-color: #e10098!important;
+    color: #fff;
+} */
+
+/* brandfilter */
+.listWrapper .giftList li a img {
+    width: 34px;
+}
+
+/* contract updates for in-store */
+.pdfContent .mainContent span {
+    background: #f2e776;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+ /* receivedgifts alignment */
+ .width-100 {
+    width: 100px;
+}
+ .width-150 {
+    width: 150px;
+}
+.width-200 {
+    width: 200px;
+}
+.priceAndQuant.quantityInnerEG .cSelect .icon-caret_down {
+    width: 30px;
+}
+.detailsOfTicketNoBack span{
+    word-wrap: break-word
+}
+.receivedGifts .cTable {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.receivedGifts .cTable thead {
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+/* maindashboard css */
+.maindashboard .nav-wrap .container .row {
+    margin-left: 0; 
+}
+.gray-font{
+    color:gray;
+}
+
+/* css for input / dropdwon */
+input.invalid, input.error, select.error {
+    border: 1px solid #f00;
+}
+select.error + i {
+    border-right: 1px solid #f00;
+    border-top: 1px solid #f00;
+}
+
+/** print modal - not using but keep this **/
+iframe.printIframe {
+    width: 100%;
+    height: 480px;
+}
+div#printModal > .modal-dialog {
+    width: 85%;
+}
+div#printModal > .modal-dialog > .modal-content {
+    height: 567px;
+}
+
+/* overriding ver lista eventDetails.css */
+.wrapPanel .listOfArticle thead .img {
+    padding: 0;
+}
+.wrapPanel .listOfArticle .img {
+    width: 15%;
+    padding: 20px 0;
+}
+.wrapPanel .listOfArticle .details {
+    width: 30%;
+}
+.wrapPanel .listOfArticle img {
+    width: 100px !important;
+    height: auto !important;
+}
+/* eventDashboard.css:150 gifts */
+/* reports */
+label[for='time-compare-chk'] span {
+    color: #ffd457;
+    display: inline-block;
+}

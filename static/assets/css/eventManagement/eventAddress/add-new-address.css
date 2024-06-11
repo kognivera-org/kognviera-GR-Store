@@ -1,0 +1,186 @@
+.size-Smallest {
+  height: 40px;
+  width: 100px;
+}
+.size-Smallest .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Smallest .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.size-Small {
+  height: 35px;
+  width: 135px;
+}
+.size-Small .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Small .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.size-Medium {
+  height: 40px;
+  width: 180px;
+}
+.size-Medium .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Medium .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.size-Large {
+  height: 50px;
+  width: 200px;
+}
+.size-Large .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Large .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.size-ExtraLarge {
+  height: 50px;
+  width: 280px;
+}
+.size-ExtraLarge .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-ExtraLarge .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.size-Big {
+  height: 50px;
+  width: 330px;
+}
+.size-Big .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Big .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.size-Full {
+  height: 50px;
+  width: 100%;
+}
+.size-Full .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Full .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+#giftBackground {
+  background: #f7f3f0 url("../../../images/giftBackground.png") repeat;
+}
+#grayBackground {
+  background: #f0f0f0;
+}
+/* .modal:before,
+.modal content '',
+.modal display inline-block,
+.modal height 100%,
+.modal vertical-align middle,
+.modal margin-right -4px,
+.modal .modal-dialog,
+.modal text-align left, */
+.modal button {
+  font-family: 'robotoCondensed';
+}
+.modal .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.addAddressForm form {
+  border-top: 1px solid #b3b3b3;
+  margin-top: 20px;
+}
+.addAddressForm form h3 {
+  font-size: 15px;
+}
+.addAddressForm form input,
+.addAddressForm form .cSelect,
+.addAddressForm form textarea {
+  border: 1px solid #aaa;
+  resize: none;
+}
+.addAddressForm form span.error {
+  color: #f00;
+  display: block;
+  font-size: 12px;
+  margin-bottom: 15px;
+  margin-top: -15px;
+}
+.addAddressForm form textarea {
+  height: 120px;
+  width: 100%;
+}
+.addAddressForm form textarea:focus {
+  outline: none;
+  border: 1px solid #aaa;
+}
+.addAddressForm form textarea:-moz-placeholder {
+  color: #3b3b3e;
+}
+.addAddressForm form textarea::-moz-placeholder {
+  color: #3b3b3e;
+}
+.addAddressForm form textarea:-ms-input-placeholder {
+  color: #3b3b3e;
+}
+.addAddressForm form textarea::placeholder {
+  color: #3b3b3e;
+}
+.addAddressForm form .cSelect select {
+  border-bottom: 1px solid #aaa;
+}
+.addAddressForm form .materialStyle label {
+  color: #3b3b3e;
+}
+.addAddressForm .formButtons button {
+  height: 40px;
+}
+.addAddressForm .formButtons p {
+  font-size: 12px;
+  margin-top: 50px;
+}
+.addAddressForm .formButtons a {
+  color: #e10098;
+}
+.addAddressForm .requiredFields {
+  color: #f00;
+  display: block;
+  font-size: 13px;
+  margin-bottom: 0;
+  text-align: right;
+}
+.addAddressForm .short {
+  padding-top: 7px;
+  text-align: center;
+}

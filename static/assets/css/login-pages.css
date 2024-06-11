@@ -1,0 +1,194 @@
+.login .size-Smallest {
+  height: 40px;
+  width: 100px;
+}
+.login .size-Smallest .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.login .size-Smallest .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.login .size-Small {
+  height: 35px;
+  width: 135px;
+}
+.login .size-Small .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.login .size-Small .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.login .size-Medium {
+  height: 40px;
+  width: 180px;
+}
+.login .size-Medium .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.login .size-Medium .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.login .size-Large {
+  height: 50px;
+  width: 200px;
+}
+.login .size-Large .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.login .size-Large .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.login .size-ExtraLarge {
+  height: 50px;
+  width: 280px;
+}
+.login .size-ExtraLarge .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.login .size-ExtraLarge .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.login .size-Big {
+  height: 50px;
+  width: 330px;
+}
+.login .size-Big .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.login .size-Big .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.login .size-Full {
+  height: 50px;
+  width: 100%;
+}
+.login .size-Full .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.login .size-Full .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.giftBackground.login  {
+  background: #f7f3f0 url("../images/giftBackground.png") repeat;
+}
+.grayBackground.login {
+  background: #f0f0f0;
+}
+/* .login .modal:before,
+.login .modal content '',
+.login .modal display inline-block,
+.login .modal height 100%,
+.login .modal vertical-align middle,
+.login .modal margin-right -4px,
+.login .modal .modal-dialog,
+.login .modal text-align left, */
+.login .modal button {
+  font-family: 'robotoCondensed';
+}
+.login .modal .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.login .loginContent {
+  padding: 100px 0;
+}
+.login .loginContent a {
+  color: #e10098;
+  cursor: pointer;
+  display: block;
+  margin: 5px 0 0 0;
+}
+.login .loginContent a:hover {
+  text-decoration: none;
+}
+.login .loginContent button {
+  font-size: 18px;
+}
+.login .loginContent form {
+  background: #fff;
+  -moz-box-shadow: 0 0 5px 2px #ddd;
+       box-shadow: 0 0 5px 2px #ddd;
+  padding: 20px 10px;
+}
+.login .loginContent form span.error {
+  color: #f00;
+  display: block;
+  font-size: 12px;
+  padding: 3px 0 0 5px;
+}
+.login .loginContent form .formBlock {
+  margin-bottom: 20px;
+}
+.login .loginContent form .materialStyle {
+  margin: 0;
+}
+.login .loginContent h1 {
+  font-family: 'robotoCondensed';
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+}
+.login .loginContent .errorLoginForm {
+  display: none;
+  margin-bottom: 20px;
+  max-height: 40px;
+  padding: 0;
+}
+.login .loginContent .errorLoginForm i.icon-tache2 {
+  font-size: 25px;
+  height: 100%;
+  padding-top: 8px;
+  text-align: center;
+  width: 40px;
+}
+.login .loginContent .errorLoginForm p {
+  font-size: 12px;
+  width: 80%;
+}
+.login .loginContent .errorLoginForm a.icon-tache2 {
+  color: #fff;
+  font-size: 6px;
+  margin: 10px 5px 0 0;
+}
+.login .loginContent .whiteTooltip + .tooltip > .tooltip-inner {
+  background-color: #fefefe;
+  -moz-box-shadow: 0 0 2px 2px #ddd;
+       box-shadow: 0 0 2px 2px #ddd;
+  color: #000;
+  padding: 5px;
+  text-align: left;
+}
+.login .loginContent .whiteTooltip + .tooltip > .tooltip-arrow {
+  border-bottom-color: #fefefe;
+}
+.login .loginContent .mt-20 {
+  margin: 20px 0 0 0;
+}

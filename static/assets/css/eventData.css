@@ -1,0 +1,175 @@
+.error {
+  color: #f00;
+}
+.wrapPanel {
+  font-family: 'robotoRegular';
+}
+.pl-0 {
+  padding-left: 0 !important;
+}
+.fz-11 {
+  font-size: 11px !important;
+}
+.vertical-align {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-align: center;
+   -ms-flex-align: center;
+       align-items: center;
+}
+.eventImg {
+  width: 100%;
+}
+.linkPlatform {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.linkPlatform li {
+  display: inline-block;
+}
+.linkPlatform li a i {
+  color: #000;
+  font-size: 35px;
+  padding: 7px;
+}
+.eventInfoWrap {
+  font-size: 12px;
+  margin-top: 20px;
+}
+.detailInfo {
+  font-size: 14px;
+  font-weight: 900;
+  min-height: 20px;
+}
+.detailInfo a {
+  color: #000;
+  text-decoration: underline;
+}
+.nameEvent {
+  font-size: 20px;
+}
+.editName {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  left: 230px;
+  position: absolute;
+  top: 40px;
+}
+.titleInfo {
+  font-size: 25px;
+  font-family: 'robotoCondensed';
+  margin-bottom: 30px;
+}
+.nameAdmin {
+  font-family: 'robotoCondensed';
+  font-size: 20px;
+  font-weight: bolder;
+}
+.nameInputEvent {
+  display: none;
+}
+.buttonsInput {
+  margin-top: -10px;
+}
+.buttonsInput .btnPrimaryAction {
+  margin-left: 5px;
+}
+.nameInputEvent {
+  margin-top: 20px;
+}
+.buttonsWrapper {
+  margin-top: 30px;
+  padding-left: 15px;
+}
+.inputDate span {
+  color: #000;
+}
+.validateMessage,
+.validateBtn {
+  font-family: 'robotoCondensed';
+}
+.validateBtn {
+  font-size: 18px;
+}
+.askIcon {
+  border: 2px solid #e10098;
+  -moz-border-radius: 20px;
+       border-radius: 20px;
+  color: #e10098;
+  font-size: 15px;
+  margin-left: 5px;
+  padding: 0 8px;
+}
+.lblGender {
+  margin-right: 50px;
+}
+.accountEdit {
+  display: none;
+}
+.accountEdit .radio {
+  display: inline-block;
+  margin-right: 20px;
+}
+.accountEdit .radio label {
+  padding-left: 0;
+}
+.successSaved {
+  display: none;
+  font-family: 'robotoCondensed';
+  font-size: 16px;
+}
+.successSaved i {
+  color: #e10098;
+  margin-right: 10px;
+}
+.alertError {
+  margin-bottom: 20px;
+  padding: 0;
+}
+.alertError i {
+  padding: 10px;
+}
+.alertError p {
+  margin: 3px 0 0;
+}
+.alertError a {
+  font-size: 7px;
+  margin-right: 7px;
+  margin-top: 7px;
+}
+.modal-content {
+  -moz-border-radius: 0;
+       border-radius: 0;
+}
+#storeModal .modal-dialog {
+  width: 25%;
+}
+#storeModal h4 {
+  font-weight: 900;
+}
+#storeModal p {
+  color: #81898c;
+}
+.requiredLabel {
+  color: #f00 !important;
+  text-align: right;
+  margin-bottom: 0;
+}
+#permissionsModal .modal-dialog {
+  width: 32%;
+}
+#calendarModal .modal-dialog {
+  width: 31%;
+}
+#calendarModal h4 {
+  font-weight: 900;
+}
+.linkText {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1.2em;
+}

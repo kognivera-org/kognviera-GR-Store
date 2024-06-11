@@ -1,0 +1,312 @@
+.size-Smallest {
+  height: 40px;
+  width: 100px;
+}
+.size-Smallest .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Smallest .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.size-Small {
+  height: 35px;
+  width: 135px;
+}
+.size-Small .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Small .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.size-Medium {
+  height: 40px;
+  width: 180px;
+}
+.size-Medium .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Medium .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.size-Large {
+  height: 50px;
+  width: 200px;
+}
+.size-Large .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Large .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.size-ExtraLarge {
+  height: 50px;
+  width: 280px;
+}
+.size-ExtraLarge .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-ExtraLarge .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.size-Big {
+  height: 50px;
+  width: 330px;
+}
+.size-Big .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Big .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.size-Full {
+  height: 50px;
+  width: 100%;
+}
+.size-Full .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Full .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+#giftBackground {
+  background: #f7f3f0 url("../images/giftBackground.png") repeat;
+}
+#grayBackground {
+  background: #f0f0f0;
+}
+/* .modal:before,
+.modal content '',
+.modal display inline-block,
+.modal height 100%,
+.modal vertical-align middle,
+.modal margin-right -4px,
+.modal .modal-dialog,
+.modal text-align left, */
+.modal button {
+  font-family: 'robotoCondensed';
+}
+.modal .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.main h1 {
+  font-family: 'robotoCondensed';
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.formHeader {
+  width: 80%;
+  border-bottom: solid 1px #f2f2f2;
+  margin: 0 auto;
+}
+.formHeader-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.formUser-title,
+.formHeader-title {
+  font-size: 24px;
+  text-align: center;
+}
+.formUser-title--small {
+  font-size: 16px;
+  text-align: center;
+}
+.formUser {
+  width: 380px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.formHeader-mail,
+.formHeader-result {
+  width: 400px;
+  padding: 5px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #666;
+}
+.formHeader-mail {
+  color: #000;
+  border: solid 1px #f2f2f2;
+}
+.textSelect {
+  font-size: 16px;
+}
+.info--required {
+  font-size: 12px;
+  color: #f00;
+  text-align: right;
+  margin: 5px 0px;
+}
+.formAlias {
+  width: 90%;
+  display: inline-block;
+}
+.formAlias_icon {
+  font-size: 25px;
+  width: 8%;
+  text-align: right;
+  vertical-align: top;
+  padding-top: 5px;
+  display: inline-block;
+}
+.title_sexo,
+.radio {
+  display: inline-block;
+}
+.radio {
+  margin-right: 15px;
+}
+.radio label {
+  color: #666;
+}
+.inputMaterial.date {
+  padding: 6px 0 6px 0;
+}
+.title_sexo {
+  margin-right: 60px;
+  font-size: 16px;
+}
+.area_date {
+  -moz-border-radius: 0px;
+       border-radius: 0px;
+}
+.area_date span {
+  color: #000;
+}
+.button_center {
+  text-align: center;
+}
+.button_right {
+  text-align: right;
+}
+.account_info_save {
+  margin-top: 15px;
+}
+.linkAddCelebrated {
+  background: #f2f2f2;
+  padding: 15px 0px;
+  text-align: center;
+}
+.linkCelebrating {
+  font-size: 16px;
+  color: #808080;
+}
+.linkCelebrating i {
+  margin-right: 15px;
+}
+.linkCelebrating:hover {
+  text-decoration: none;
+  color: #707070;
+}
+.selectTypeForm {
+  width: 550px;
+  margin: 15px auto 0 auto;
+}
+.areaNewCelebrated {
+  border-top: 1px solid #dedede;
+  margin: -5px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.formUser-status--success {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  display: none;
+}
+.formUser-status--success .icon-estado_de_mensaje_aprobado {
+  font-size: 26px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  color: #df0095;
+}
+.formUser-status--success .user {
+  display: inline-block;
+  vertical-align: middle;
+}
+.alertError {
+  width: 80%;
+  margin: 0 auto;
+}
+label.invalid,
+label.error {
+  color: #f00;
+  font-weight: 200;
+}
+input.invalid,
+input.error,
+select.error {
+  border: 1px solid #f00;
+}
+select.error + i {
+  border-right: 1px solid #f00;
+  border-top: 1px solid #f00;
+}
+.alertError {
+  display: none;
+}
+.alertError a {
+  font-size: 8px;
+}
+#newCelebrated-2,
+#formUserAlerts-2,
+#dataCelebrated-2,
+#dataManagement-2,
+#userRegistryManagement-2 {
+  display: none;
+}
+#newCelebrated-3,
+#formUserAlerts-3,
+#dataCelebrated-3,
+#dataManagement-3,
+#userRegistryManagement-3 {
+  display: none;
+}
+.registerFooter {
+  margin-top: 30px;
+  padding-bottom: 15px;
+}
+.cSelect {
+  margin-bottom: 0;
+}
+.formUser-status-finished {
+  background: #f2f2f2;
+}
+.accountInfoCelebratedContent {
+  background: #fff;
+  margin-top: 20px;
+  -moz-box-shadow: 0 20px 20px 0 rgba(0,0,0,0.14), 0 20px 20px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+       box-shadow: 0 20px 20px 0 rgba(0,0,0,0.14), 0 20px 20px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}

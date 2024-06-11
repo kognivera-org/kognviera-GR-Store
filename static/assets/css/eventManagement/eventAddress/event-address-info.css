@@ -1,0 +1,83 @@
+.contentHeader button {
+  display: inline-block;
+  font-size: 1.2em;
+  margin-right: 5%;
+  vertical-align: middle;
+  width: 70%;
+}
+.contentHeader i {
+  display: inline-block;
+  font-size: 30px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.addressBlock {
+  font-family: 'robotoCondensed';
+  margin: 0 auto 10px;
+  width: 80%;
+}
+.addressBlock .buttonBlock,
+.addressBlock .more {
+  margin-top: 60px;
+}
+.addressBlock .buttonBlock button,
+.addressBlock .more button,
+.addressBlock .buttonBlock a,
+.addressBlock .more a {
+  display: block;
+  height: 45px;
+  font-size: 16px;
+  margin: 5px 0;
+}
+.addressBlock .buttonBlock a,
+.addressBlock .more a {
+  padding-top: 12px;
+}
+.addressBlock .buttonBlock a:hover,
+.addressBlock .more a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.addressBlock .more {
+  display: none;
+}
+.addressBlock h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+.addressBlock h4 {
+  font-size: 15px;
+  color: #666;
+  margin: 0 0 5px 0;
+}
+.addressBlock label {
+  color: #666;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+.addressBlock select,
+.addressBlock select option {
+  color: #333;
+}
+.addressRow {
+  margin-top: 70px;
+}
+.messagesBlock {
+  margin: 20px auto 10px;
+  width: 90%;
+}
+.messagesBlock .alertSuccess {
+  display: none;
+}
+.messagesBlock .alertSuccess .icon-tache2,
+.messagesBlock .alertWarning .icon-tache2 {
+  cursor: pointer;
+  font-size: 5px;
+}
+.messagesBlock .alertSuccess .icon-tache2:hover,
+.messagesBlock .alertWarning .icon-tache2:hover {
+  color: #fff;
+  text-decoration: none;
+}

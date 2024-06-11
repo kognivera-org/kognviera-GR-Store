@@ -1,0 +1,5 @@
+.boxStyle {
+  -moz-box-shadow: 0 0 8px #ccc;
+       box-shadow: 0 0 8px #ccc;
+  background-color: #fff;
+}

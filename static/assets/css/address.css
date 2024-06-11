@@ -1,0 +1,96 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+.borderTopStyle {
+  border-top: 1px solid #f2f2f2;
+}
+.show-grid {
+  clear: both;
+  margin: 0;
+  padding: 20px 0 20px 0;
+}
+.show-grid-row {
+  clear: both;
+  margin: 0;
+  padding: 5px 0 5px 0;
+}
+.wrap-address {
+  margin: 30px 0 0 0;
+}
+.wrap-address .title {
+  font-size: 30px;
+}
+.wrap-address .alignRight {
+  text-align: right;
+}
+.wrap-address .alignLeft {
+  text-align: left;
+}
+.wrap-address .alignCenter {
+  text-align: center;
+}
+.wrap-address .min,
+.wrap-address .max,
+.wrap-address b {
+  color: #000;
+  font-weight: bold;
+}
+.wrap-address .tabsText {
+  font-size: 16px;
+}
+.wrap-address .checkbox,
+.wrap-address .radio {
+  margin: 25px 0 25px 0;
+}
+.wrap-address .checkbox label,
+.wrap-address .radio label {
+  font-weight: bold;
+}
+.wrap-address .checkbox span,
+.wrap-address .radio span {
+  display: block;
+  padding: 0 0 0 20px;
+}
+.wrap-address .vertical-align {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-align: center;
+   -ms-flex-align: center;
+       align-items: center;
+}
+.wrap-address .hidden-row {
+  display: none;
+}
+.wrap-address .subtitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+.wrap-address .margin0 {
+  margin: 0 !important;
+}
+.wrap-address textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 121px;
+  max-height: 121px;
+}
+.wrap-address .terms {
+  color: #81898c;
+  font-size: 13px;
+}
+.wrap-address .terms .primaryColorLink {
+  display: inline-block;
+}
+.wrap-address .error {
+  color: #f00;
+}
+.wrap-address select {
+  color: #000 !important;
+}
+.wrap-address form {
+  width: 100%;
+}
+.wrap-address .hidden-alert {
+  display: none;
+}

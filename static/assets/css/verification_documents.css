@@ -1,0 +1,235 @@
+.size-Smallest {
+  height: 40px;
+  width: 100px;
+}
+.size-Smallest .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Smallest .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.size-Small {
+  height: 35px;
+  width: 135px;
+}
+.size-Small .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Small .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.size-Medium {
+  height: 40px;
+  width: 180px;
+}
+.size-Medium .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Medium .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.size-Large {
+  height: 50px;
+  width: 200px;
+}
+.size-Large .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Large .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.size-ExtraLarge {
+  height: 50px;
+  width: 280px;
+}
+.size-ExtraLarge .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-ExtraLarge .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.size-Big {
+  height: 50px;
+  width: 330px;
+}
+.size-Big .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Big .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.size-Full {
+  height: 50px;
+  width: 100%;
+}
+.size-Full .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Full .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+#giftBackground {
+  background: #f7f3f0 url("../images/giftBackground.png") repeat;
+}
+#grayBackground {
+  background: #f0f0f0;
+}
+/* .modal:before,
+.modal content '',
+.modal display inline-block,
+.modal height 100%,
+.modal vertical-align middle,
+.modal margin-right -4px,
+.modal .modal-dialog,
+.modal text-align left, */
+.modal button {
+  font-family: 'robotoCondensed';
+}
+.modal .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+/* body {
+  font-family: 'robotoCondensed';
+  font-size: 16px;
+  font-style: normal;
+} */
+.upload {
+  height: 85vh;
+  width: 100%;
+  margin-top: 30px;
+}
+.bodyEmployee {
+  height: 70%;
+}
+.mainTitle {
+  text-align: left;
+}
+.infoIcons {
+  margin: 0;
+  font-size: 1em;
+  color: #808080;
+  padding: 0;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+   -ms-flex-direction: row;
+       flex-direction: row;
+  -moz-box-pack: end;
+   -ms-flex-pack: end;
+       justify-content: flex-end;
+}
+.uploadIcons {
+  padding-top: 20px;
+}
+.infoIcons label {
+  color: #000;
+  font-size: 1em;
+}
+.uploadIcons label {
+  color: #000;
+  font-size: 2em;
+  padding: 10px;
+}
+.infoIcons {
+  color: #000;
+  font-size: 1.1em !important;
+}
+.wrapperFiles {
+  padding: 10px;
+  border: 1px solid #f0f0f0;
+  width: 40%;
+}
+.fileList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.hideBlock {
+  display: none !important;
+}
+.lblFileUp {
+  line-height: 3em;
+}
+.inFile {
+  width: 0;
+}
+.fileLi {
+  margin-bottom: 5px;
+  width: 100%;
+  background: #f0f0f0;
+}
+.file {
+  width: 100%;
+}
+.uploadWrapper {
+  margin-top: 15px;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-pack: justify;
+   -ms-flex-pack: justify;
+       justify-content: space-between;
+}
+.percent {
+  width: 3%;
+}
+.nameFile,
+.progress {
+  height: 18px;
+  margin: 0;
+}
+.progress {
+  border: 0;
+}
+.progress::-webkit-progress-bar {
+  background: #808080;
+}
+.progress::-webkit-progress-value {
+  background: #df0095;
+}
+.progress::-moz-progress-bar {
+  background: #df0095;
+}
+.btnPrimary {
+  width: 100%;
+}
+.icon-cerrar:before {
+  content: "";
+}
+.icon-cerrar:after {
+  content: "\e910";
+  float: right;
+  margin-right: 10px;
+  margin-top: 3px;
+}

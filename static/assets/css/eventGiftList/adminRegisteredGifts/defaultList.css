@@ -1,0 +1,280 @@
+.size-Smallest {
+  height: 40px;
+  width: 100px;
+}
+.size-Smallest .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Smallest .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.size-Small {
+  height: 35px;
+  width: 135px;
+}
+.size-Small .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Small .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.size-Medium {
+  height: 40px;
+  width: 180px;
+}
+.size-Medium .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Medium .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.size-Large {
+  height: 50px;
+  width: 200px;
+}
+.size-Large .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Large .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.size-ExtraLarge {
+  height: 50px;
+  width: 280px;
+}
+.size-ExtraLarge .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-ExtraLarge .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.size-Big {
+  height: 50px;
+  width: 330px;
+}
+.size-Big .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Big .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.size-Full {
+  height: 50px;
+  width: 100%;
+}
+.size-Full .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Full .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+#giftBackground {
+  background: #f7f3f0 url("../../../images/giftBackground.png") repeat;
+}
+#grayBackground {
+  background: #f0f0f0;
+}
+/* .modal:before,
+.modal content '',
+.modal display inline-block,
+.modal height 100%,
+.modal vertical-align middle,
+.modal margin-right -4px,
+.modal .modal-dialog,
+.modal text-align left, */
+.modal button {
+  font-family: 'robotoCondensed';
+}
+.modal .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.articles {
+  font-size: 20px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.articles,
+.range {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+.range {
+  text-transform: none;
+}
+.totalValue {
+  font-size: 18px;
+  color: #2f2f2f;
+  margin: 0;
+}
+.totalValue b {
+  font-size: 19px;
+}
+.paginator {
+  text-align: center;
+}
+.paginator ul {
+  list-style-type: none;
+  padding: 10px 0 0 0;
+  margin: 0;
+}
+.paginator ul li {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+.paginator ul li a,
+.paginator ul li a i {
+  color: #666;
+  padding: 0 5px;
+}
+.paginator ul li a:hover,
+.paginator ul li a i:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+.paginator ul li a i {
+  padding: 0 3px;
+}
+.paginator.paginatorBottom {
+  margin-bottom: 100px;
+  margin-top: 40px;
+}
+.actionsBlock {
+  border-bottom: 1px solid #b3b3b3;
+  margin-top: 50px;
+}
+.actionsBlock .cSelect i {
+  background: #f2f2f2;
+  color: #666;
+}
+.listsBlock {
+  font-family: 'robotoCondensed';
+  margin: 40px 0 80px;
+}
+.listsBlock h2 {
+  font-size: 20px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.listsBlock img {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.listsBlock .buttonBlock button {
+  font-size: 18px;
+}
+.listsBlock .buttonBlock a {
+  display: block;
+  height: 50px;
+  font-size: 18px;
+  padding-top: 12px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.listsBlock .buttonBlock a:hover {
+  color: #000;
+}
+.listsBlock .imgBlock {
+  margin-top: 15px;
+  position: relative;
+}
+.listsBlock .imgBlock .addedList {
+  background: rgba(0,0,0,0.6);
+  display: none;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.listsBlock .imgBlock .addedList p {
+  color: #fff;
+  left: 50%;
+  margin-left: -40%;
+  margin-top: -20px;
+  text-align: center;
+  top: 50%;
+  position: absolute;
+  width: 80%;
+}
+.listHeader {
+  margin-top: 30px;
+}
+.listHeader a {
+  color: #000;
+  text-decoration: underline;
+}
+.listHeader h1 {
+  margin: 30px 0 0;
+}
+.listHeader p {
+  color: #666;
+}
+.listHeader .listInfo {
+  font-family: 'robotoCondensed';
+}
+.listHeader .addList {
+  text-align: right;
+}
+.listHeader .addList button {
+  font-family: 'robotoCondensed';
+  font-size: 18px;
+  margin-top: 90px;
+}
+.productBlock {
+  border-bottom: 1px solid #b3b3b3;
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+.productBlock img {
+  display: block;
+  margin: 0 auto 15px;
+  width: 90%;
+}
+.productBlock .articleName {
+  font-family: 'robotoCondensed';
+  height: 35px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.productBlock .informativeTextSecond {
+  font-size: 12px;
+  margin: 8px 0 5px 0;
+}
+.productBlock .informativeTextSecond span {
+  font-size: 14px;
+}
+.productBlock .productPrice {
+  font-size: 16px;
+  font-weight: bold;
+}

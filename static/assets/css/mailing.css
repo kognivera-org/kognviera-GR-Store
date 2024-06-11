@@ -1,0 +1,51 @@
+.mailing .btn {
+  -moz-border-radius: none;
+       border-radius: none;
+}
+.mailing h3 {
+  font-weight: bold;
+  color: #666;
+}
+.mailing p.aviso {
+  color: #666;
+  font-size: 18px;
+}
+.btnMail {
+  padding: 10px;
+}
+.data {
+  color: #b3b3b3;
+}
+.info-msg-atencion {
+  margin-top: 20px;
+  border-top: solid 1px #b3b3b3;
+  border-bottom: solid 1px #b3b3b3;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.footer-mailing b {
+  font-size: 10px;
+}
+.footer-mailing .right {
+  float: right;
+}
+.footer-mailing .right li {
+  display: inline;
+  text-align: right;
+}
+.table-mail {
+  border: solid 1px #b3b3b3;
+  padding: 15px;
+}
+.table-mail h4.table-title {
+  border-bottom: solid 1px #b3b3b3;
+  padding: 10px 0px;
+}
+.table-mail h4.headers-table {
+  border-bottom: solid 1px #b3b3b3;
+  padding: 10px 0px;
+}
+.table-mail .table-body {
+  padding: 10px 0px;
+}

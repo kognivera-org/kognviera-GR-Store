@@ -1,0 +1,194 @@
+.size-Smallest {
+  height: 40px;
+  width: 100px;
+}
+.size-Smallest .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Smallest .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.size-Small {
+  height: 35px;
+  width: 135px;
+}
+.size-Small .iconRight {
+  margin: 2px 3px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Small .iconLeft {
+  margin: 2px 0 0 3px;
+  float: left;
+  font-size: 13px;
+}
+.size-Medium {
+  height: 40px;
+  width: 180px;
+}
+.size-Medium .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Medium .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.size-Large {
+  height: 50px;
+  width: 200px;
+}
+.size-Large .iconRight {
+  margin: 2px 10px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Large .iconLeft {
+  margin: 2px 0 0 10px;
+  float: left;
+  font-size: 13px;
+}
+.size-ExtraLarge {
+  height: 50px;
+  width: 280px;
+}
+.size-ExtraLarge .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-ExtraLarge .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.size-Big {
+  height: 50px;
+  width: 330px;
+}
+.size-Big .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Big .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+.size-Full {
+  height: 50px;
+  width: 100%;
+}
+.size-Full .iconRight {
+  margin: 2px 20px 0 0;
+  float: right;
+  font-size: 13px;
+}
+.size-Full .iconLeft {
+  margin: 2px 0 0 20px;
+  float: left;
+  font-size: 13px;
+}
+#giftBackground {
+  background: #f7f3f0 url("../images/giftBackground.png") repeat;
+}
+#grayBackground {
+  background: #f0f0f0;
+}
+/* .modal:before,
+.modal content '',
+.modal display inline-block,
+.modal height 100%,
+.modal vertical-align middle,
+.modal margin-right -4px,
+.modal .modal-dialog,
+.modal text-align left, */
+.modal button {
+  font-family: 'robotoCondensed';
+}
+.modal .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.loginContent {
+  padding: 100px 0;
+}
+.loginContent a {
+  color: #e10098;
+  cursor: pointer;
+  display: block;
+  margin: 5px 0 0 0;
+}
+.loginContent a:hover {
+  text-decoration: none;
+}
+.loginContent button {
+  font-size: 18px;
+}
+.loginContent form {
+  background: #fff;
+  -moz-box-shadow: 0 0 5px 2px #ddd;
+       box-shadow: 0 0 5px 2px #ddd;
+  padding: 20px 10px;
+}
+.loginContent form span.error {
+  color: #f00;
+  display: block;
+  font-size: 12px;
+  padding: 3px 0 0 5px;
+}
+.loginContent form .formBlock {
+  margin-bottom: 20px;
+}
+.loginContent form .materialStyle {
+  margin: 0;
+}
+.loginContent h1 {
+  font-family: 'robotoCondensed';
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+}
+.loginContent .errorLoginForm {
+  display: none;
+  margin-bottom: 20px;
+  max-height: 40px;
+  padding: 0;
+}
+.loginContent .errorLoginForm i.icon-tache2 {
+  font-size: 25px;
+  height: 100%;
+  padding-top: 8px;
+  text-align: center;
+  width: 40px;
+}
+.loginContent .errorLoginForm p {
+  font-size: 12px;
+  width: 80%;
+}
+.loginContent .errorLoginForm a.icon-tache2 {
+  color: #fff;
+  font-size: 6px;
+  margin: 10px 5px 0 0;
+}
+.loginContent .whiteTooltip + .tooltip > .tooltip-inner {
+  background-color: #fefefe;
+  -moz-box-shadow: 0 0 2px 2px #ddd;
+       box-shadow: 0 0 2px 2px #ddd;
+  color: #000;
+  padding: 5px;
+  text-align: left;
+}
+.loginContent .whiteTooltip + .tooltip > .tooltip-arrow {
+  border-bottom-color: #fefefe;
+}
+.loginContent .mt-20 {
+  margin: 20px 0 0 0;
+}

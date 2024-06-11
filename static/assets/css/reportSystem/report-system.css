@@ -1,0 +1,54 @@
+.mta-25 {
+  margin: 25px auto;
+}
+.mt-20 {
+  margin: 20px 0 0 0 !important;
+}
+.pt-20 {
+  padding: 20px 0 0 0 !important;
+}
+.fz-12 {
+  font-size: 12px;
+}
+.closeBtnOnly {
+  padding: 10px 10px 0 0;
+}
+.main .alignLeft {
+  text-align: left;
+}
+.main .alignRight {
+  text-align: right;
+}
+.main .alignCenter {
+  text-align: center;
+}
+.main .vertical-align {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-align: center;
+   -ms-flex-align: center;
+       align-items: center;
+}
+.main .row-block {
+  clear: both;
+  margin: 0;
+}
+.main .scrollOptions {
+  border: 1px solid #000;
+  padding: 0 15px 0 15px;
+  min-height: 200px;
+  max-height: 200px;
+  overflow: auto;
+}
+.main .compararContent {
+  display: none;
+}
+.main .newReportContainer,
+.main .favoriteContainer {
+  display: none;
+}
+.main .deleteFavorite {
+  font-size: 20px;
+  padding: 0 0 0 20px;
+}

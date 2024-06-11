@@ -1,0 +1,124 @@
+.wrapPanel .profileImg {
+  width: 100%;
+}
+.wrapPanel .amperson {
+  color: #e10098;
+}
+.wrapPanel .nameSubname p {
+  margin: 0;
+}
+.wrapPanel .nameSubname p:nth-child(1) {
+  font-weight: bold;
+  font-size: 21px;
+}
+.wrapPanel .detailsEvent p {
+  margin: 0;
+  font-weight: bold;
+}
+.wrapPanel .detailsEvent p span {
+  color: #888;
+}
+.wrapPanel .show-grid-row {
+  clear: both;
+  margin: 0;
+  padding: 5px 0 5px 0;
+}
+.wrapPanel .vertical-align {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-align: center;
+   -ms-flex-align: center;
+       align-items: center;
+}
+.wrapPanel .alignRight {
+  text-align: right;
+}
+.wrapPanel .alignLeft {
+  text-align: left;
+}
+.wrapPanel .alignCenter {
+  text-align: center;
+}
+.wrapPanel .barCode {
+  width: 100%;
+  padding: 15px 0 0 0;
+}
+.wrapPanel .linkPlatform {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.wrapPanel .linkPlatform li {
+  display: inline-block;
+}
+.wrapPanel .linkPlatform li a i {
+  color: #000;
+  font-size: 35px;
+  padding: 7px;
+}
+.wrapPanel .searchResult {
+  color: #888;
+  font-size: 15px;
+}
+.wrapPanel .searchResult span {
+  font-weight: bold;
+}
+.wrapPanel .headCat {
+  color: #dedede;
+}
+.wrapPanel .headCat span {
+  font-weight: bold;
+  color: #000;
+}
+.wrapPanel .listOfArticle {
+  width: 100%;
+}
+.wrapPanel .listOfArticle thead {
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+.wrapPanel .listOfArticle thead tr td {
+  font-weight: bold;
+}
+.wrapPanel .listOfArticle img {
+  width: 200px;
+  height: 128px;
+}
+.wrapPanel .listOfArticle .price,
+.wrapPanel .listOfArticle .quantity {
+  text-align: center;
+}
+.wrapPanel .listOfArticle .details,
+.wrapPanel .listOfArticle .img {
+  text-align: left;
+}
+.wrapPanel .listOfArticle .details p,
+.wrapPanel .listOfArticle .img p {
+  margin: 0;
+}
+.wrapPanel .listOfArticle .details {
+  width: 20%;
+}
+.wrapPanel .listOfArticle .img {
+  width: 25%;
+}
+.wrapPanel .listOfArticle .rating .unselected {
+  color: #000;
+}
+.wrapPanel .listOfArticle .rating i {
+  cursor: pointer;
+  font-size: 25px;
+  color: #ffe499;
+}
+.wrapPanel .listOfArticle .price p {
+  margin: 0;
+}
+.wrapPanel .listOfArticle .price .strike-price {
+  text-decoration: line-through;
+  color: #888;
+}
+.wrapPanel .listOfArticle .price .normal-price {
+  font-weight: bold;
+  color: #000;
+}

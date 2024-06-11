@@ -1,0 +1,165 @@
+.container-middle {
+  padding: 1em 7em;
+}
+.right {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-pack: end;
+   -ms-flex-pack: end;
+       justify-content: flex-end;
+}
+#img-bolsa {
+  width: 15em;
+  height: 15em;
+}
+.nmv {
+  margin: 0 auto;
+}
+.nmh {
+  margin: auto 0;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.table-title {
+  font-size: 1.5em;
+  font-family: "robotoCondensed";
+}
+.table-header {
+  background-color: #d4d4d4;
+  margin-top: 1.5em;
+  min-height: 50px;
+  padding: 10px;
+}
+.table-body {
+  margin: 0 auto;
+  border: 1px solid #d4d4d4;
+  min-height: auto;
+  padding: 3px;
+}
+.body-left {
+  border-right: 1px solid #d4d4d4;
+  min-height: 180px;
+}
+.label-table {
+  font-size: 0.9em;
+  font-weight: 200;
+  color: #3c3c3c;
+}
+.info-body {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.label-detail {
+  font-weight: 200;
+}
+.row-detail {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-pack: justify;
+   -ms-flex-pack: justify;
+       justify-content: space-between;
+}
+.text-right {
+  display: inline;
+  text-align: right;
+}
+.text-left {
+  display: inline;
+  text-align: left;
+  max-width: 60%;
+}
+.borde-abajo {
+  border-bottom: 1px solid #d4d4d4;
+}
+.p-5 {
+  padding: 5px;
+}
+.mr-15 {
+  margin-right: 15px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+/* toolTip */
+#option1.row > .icon-ayuda.Tooltip{
+  position: absolute;
+  top: 43px;
+  left: 150px;
+}
+#option1.row > .on-hover .iClass.icon-ayuda{
+  position: absolute;
+  top: -30px;
+  left: 130px;
+}
+#option1.row .on-hover:hover .popover.bottom {
+  display: block;
+}
+#option1.row .on-hover:hover .popover.bottom > .arrow{
+  left: 50%;
+}
+.m-t-25 {
+  margin-top: 25px !important;
+}
+/* toolTip */
+.icono-grande-inline {
+  display: inline;
+  font-size: 2em;
+}
+.btn-custom {
+  height: 40px;
+  width: 200px;
+}
+.centered {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-pack: center;
+   -ms-flex-pack: center;
+       justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.titleInfoDetail {
+  display: block;
+  font-size: 0.9em;
+}
+.qtyDetail {
+  display: block;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.signoDetail {
+  font-size: 2em;
+}
+.messageDetail {
+  font-size: 0.8em;
+}
+.myslider {
+  width: 80%;
+  padding: 0 10px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.myslider .ui-slider-handle.ui-corner-all.ui-state-default {
+  background-color: #e10098;
+  top: -8px;
+}
+.slider {
+  height: 2px !important;
+}
+hr {
+  margin: 0;
+}
+.textPopUp {
+  display: none;
+  padding: 0 0 0 20px;
+}
