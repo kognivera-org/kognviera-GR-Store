@@ -22,24 +22,34 @@ const cacheProvider = require('../utils/cache-provider');
 
 const NODE_ENV = process.env.NODE_ENV;
 const settings = settingsFile[NODE_ENV];
-settings.plugins = [
-  require('hapi-nested-route'),
-];
+// settings.plugins = [
+//   require('hapi-nested-route'),
+// ];
 
 const start = async () => {
   try {
    // const done = await server.init(settings);
     const pretty = new PrettyError();
+  
+    await server.register([
+      require('@hapi/vision'),
+      require('@hapi/inert'),
+      //require('../hails/plugin-hapi-nested-route'),
+    ]);
 
     server.route({
       method: '*',
       path: '/{p*}',
-      handler: (request, reply) => {
+      handler: (request, h) => {
         if (request.path !== '/') {
           const fPath = path.resolve(`${__dirname}/../../static/${request.path}`);
           try {
-            if (fs.statSync(fPath)) {
-              return reply.file(fPath);
+            const stats = fs.statSync(fPath);
+            if (stats) {
+              return new Promise((resolve, reject) => {
+                resolve(h.file(fPath, { confine: false }))
+              });
+              // return reply.file(fPath);
             }
           } catch (e) {
             /* empty */
@@ -57,24 +67,26 @@ const start = async () => {
         const history = syncHistoryWithStore(memoryHistory, store);
 
         function hydrateOnClient() {
-          const hidrateConfig = <Html assets={webpackIsomorphicTools.assets()} store={store} />;
-          return reply(`<!doctype html>${ReactDOM.renderToString(hidrateConfig)}`);
+          return new Promise((resolve, reject) => {
+            resolve(h.response(`<!doctype html>${ReactDOM.renderToString(<Html assets={webpackIsomorphicTools.assets()} store={store} />)}`))
+          })
         }
 
         if (DISABLE_SSR) {
           return hydrateOnClient();
         }
 
-        return match({
+	return new Promise((resolve, reject) => {
+         match({
           history,
           routes: getRoutes(store),
           location: request.path,
         }, (error, redirectLocation, renderProps) => {
           if (redirectLocation) {
-            reply.redirect(redirectLocation.pathname + redirectLocation.search);
+            resolve(h.redirect(redirectLocation.pathname + redirectLocation.search));
           } else if (error) {
             logger.error('ROUTER ERROR:', pretty.render(error));
-            hydrateOnClient().code(500);
+            return hydrateOnClient().code(500);
           } else if (renderProps) {
             loadOnServer({ ...renderProps, store, helpers: { client } }).then(() => {
               const component = (
@@ -92,17 +104,18 @@ const start = async () => {
                 version={global.version}
                 GTMAuth={settings.taggingAuth}
               />);
-              reply(`<!doctype html>${ReactDOM.renderToString(hidrateConfig)}`);
+              resolve(h.response(`<!doctype html>${ReactDOM.renderToString(hidrateConfig)}`));
             });
           } else {
             // TODO not found
-            reply('Not Found').code(404);
+            resolve(h.response('Not Found').code(404));
           }
         });
+ 	})
       },
     });
 
-    await server.start();
+    await server.start()
     //done();
 
     logger.info('--------------------------------------------------------------------------');
