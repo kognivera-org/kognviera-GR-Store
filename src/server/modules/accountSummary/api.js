@@ -194,7 +194,7 @@ module.exports = function () {
       }
     },{
       method: 'POST',
-      path: '/api/accountPartialTransferDetails"',
+      path: '/api/accountPartialTransferDetails',
       handler: async (request, reply) => {
         serverUtils.triggerServerRequest({
           request,

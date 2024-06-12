@@ -1,5 +1,5 @@
 const _ = require('lodash'),
-    accountSummary = require("./modules/accountSummary")(),
+    accountSummary = require("./modules/accountSummary/api")(),
     
     Routes = _.unionBy(accountSummary,);
 
