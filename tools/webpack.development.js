@@ -61,7 +61,7 @@ module.exports = {
           },
         ],
       },
-      { test: /\.json$/, use: 'json-loader' },
+      { test: /\.json$/, type: 'json' },
       {
         test: /\.css$/,
         use: [
@@ -99,6 +99,12 @@ module.exports = {
       'node_modules',
     ],
     extensions: ['.json', '.js', '.jsx'],
+    fallback: {
+      "domain": require.resolve("domain-browser"),
+      "timers": require.resolve("timers-browserify"),
+      "stream": require.resolve("stream-browserify"),
+      "path": require.resolve("path-browserify")
+    }
   },
   plugins: [
     // hot reload
