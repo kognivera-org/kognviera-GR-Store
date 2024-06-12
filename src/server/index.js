@@ -22,6 +22,8 @@ const cacheProvider = require('../utils/cache-provider');
 
 const NODE_ENV = process.env.NODE_ENV;
 const settings = settingsFile[NODE_ENV];
+const HapiSwagger = require('hapi-swagger');
+import { ApiRoutes } from '../server/routes';
 // settings.plugins = [
 //   require('hapi-nested-route'),
 // ];
@@ -34,8 +36,13 @@ const start = async () => {
     await server.register([
       require('@hapi/vision'),
       require('@hapi/inert'),
-      //require('../hails/plugin-hapi-nested-route'),
+      {
+        plugin: HapiSwagger,
+        options: settings.swagger
+    }
+      //
     ]);
+ server.route(ApiRoutes);
 
     server.route({
       method: '*',
