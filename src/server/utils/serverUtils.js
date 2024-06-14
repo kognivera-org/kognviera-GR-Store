@@ -72,7 +72,7 @@ const ServerUtils = {
                 if (cached) {
                     // reply cached value if found
                     log.debug('sending xx-cached-response :: ', path, correlationId);
-                    reply(cached);
+                    return cached;
                     break;
                 } else {
                     // transform brand property in request
@@ -128,6 +128,7 @@ const ServerUtils = {
 
                     // merge response
                     mergedData = { ...mergedData, ...data }
+                    let res = {};
 
                     // send back response to browser
                     if (i == operations.length - 1) {
@@ -136,17 +137,33 @@ const ServerUtils = {
 
                         // pass atg instance header info back to the browser
                         const atgheader = 'atg:' + response.headers['gr-hostname'] + '----node:' + nodeInstance;
+                        
+                        if(atgheader)
+                            {
+                                ///console.log("=========atgheader====",atgheader,mergedData)
+                                res = {
+                                    "header" : atgheader,
+                                    "data" :mergedData
 
-                        atgheader
-                            ? reply(mergedData).header('gr-hostname', atgheader)
-                            : reply(mergedData);
+                                }
+                                 
+                            }
+                            else 
+                            {
+                                res = {
+                                    "data" :mergedData
+                                }
+                            }
+                            
+                            
                     }
+                    return res;
                 }
             } catch (error) {
                 // reply error if any
                 log.error('received xx-error ' + correlationId + ' :: ', path, error)
                 let err = appconfig && appconfig.defaultError;
-                reply(err)
+               return err;
                 break;
             }
         }
