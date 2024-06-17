@@ -1,6 +1,6 @@
 /* code from vue-nes */
 
-import Nes from 'nes'
+const Nes = require('@hapi/nes');
 
 const SOCKET_CONNECTED = '@react-hapines/CONNECTED'
 const SOCKET_DISCONNECTED = '@react-hapines/DISCONNECTED'

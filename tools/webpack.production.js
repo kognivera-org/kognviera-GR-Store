@@ -83,11 +83,14 @@ module.exports = {
       "domain": require.resolve("domain-browser"),
       "timers": require.resolve("timers-browserify"),
       "stream": require.resolve("stream-browserify"),
-      "path": require.resolve("path-browserify")
-    }
+      "path": require.resolve("path-browserify"),
+      "crypto": require.resolve('crypto-browserify'),
+      'process/browser': require.resolve('process/browser'), 
+      "buffer": require.resolve("buffer"),
+    }    
   },
   plugins: [
-    new CleanPlugin([assetsPath], { root: projectRootPath }),
+    new CleanPlugin([assetsPath], { root: projectRootPath }), 
 
     // css files from the extract-text-plugin loader
     new MiniCssExtractPlugin(),
@@ -99,6 +102,10 @@ module.exports = {
       SERVER: false,
       DEVELOPMENT: false,
     }),
+    new webpack.ProvidePlugin({
+      process: 'process/browser',
+      Buffer: ["buffer", "Buffer"],
+}),
 
         // ignore dev config
         new webpack.IgnorePlugin({
