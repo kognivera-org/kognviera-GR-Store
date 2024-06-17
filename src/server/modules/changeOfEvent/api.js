@@ -25,47 +25,54 @@ import serverUtils from '../../utils/serverUtils';
 //     });
 
 // })
-
-server.route.post('/api/validateRequiredOwners', {
-    tags: ['api'],
-    validate: {
-        payload: {
-            email: Joi.string().required(),
-            selectedEventCategory: Joi.string().required(),
-            selectedEventType: Joi.string().required(),
-            existingEventId: Joi.string().required(),
-            channel: Joi.string().required(),
-            brand: Joi.string().required(),
+module.exports = function () {
+    return [
+      {
+        method: 'POST',
+        path: '/api/validateRequiredOwners',
+        handler: async (request, reply) => {
+            serverUtils.triggerServerRequest([
+                {
+                    request,
+                    reply,
+                    transformRequest: (requestObj) => {
+                        delete requestObj.payload.email
+                        return requestObj;
+                    }
+                },
+                {
+                    request,
+                    reply,
+                    transformRequest: (requestObj, requestPayload) => {
+                        delete requestObj.path
+                        requestObj.path = '/api/coOwnerEligible'
+                        requestObj.payload.emailId = requestPayload.email
+                        requestObj.payload.eventType = requestPayload.selectedEventType
+                        requestObj.payload.eventId = requestPayload.existingEventId
+                        delete requestObj.payload.email
+                        delete requestObj.payload.selectedEventType
+                        delete requestObj.payload.existingEventId
+                        delete requestObj.payload.selectedEventCategory
+                        return requestObj;
+                    }
+                }]);
         },
-    },
-}, (request, reply) => {
-    serverUtils.triggerServerRequest([
-        {
-            request,
-            reply,
-            transformRequest: (requestObj) => {
-                delete requestObj.payload.email
-                return requestObj;
-            }
-        },
-        {
-            request,
-            reply,
-            transformRequest: (requestObj, requestPayload) => {
-                delete requestObj.path
-                requestObj.path = '/api/coOwnerEligible'
-                requestObj.payload.emailId = requestPayload.email
-                requestObj.payload.eventType = requestPayload.selectedEventType
-                requestObj.payload.eventId = requestPayload.existingEventId
-                delete requestObj.payload.email
-                delete requestObj.payload.selectedEventType
-                delete requestObj.payload.existingEventId
-                delete requestObj.payload.selectedEventCategory
-                return requestObj;
-            }
-        }]);
-})
-
+        options: {
+          tags: ['api'],
+          validate: {
+            payload: Joi.object({
+                email: Joi.string().required(),
+                selectedEventCategory: Joi.string().required(),
+                selectedEventType: Joi.string().required(),
+                existingEventId: Joi.string().required(),
+                channel: Joi.string().required(),
+                brand: Joi.string().required(),
+            }),
+          }
+        }
+      },
+    ]
+}
 
 // server.route.post('/api/validateRequiredOwners', {
 //     tags: ['api'],
