@@ -7,59 +7,74 @@ import serverEndpoints from 'server/serverEndpoints';
 // import { server, models } from 'hails';
 import serverUtils from '../../../utils/serverUtils';
 
-server.route.post('/api/getEventDeliveryAddresses', {
-    tags: ['api'],
-    validate: {
-        payload: {
-            channel: Joi.string().required(),
-            brand: Joi.string().required(),
-            eventId: Joi.string().required(),
+module.exports = function () {
+    return [
+      {
+        method: 'POST',
+        path: '/api/getEventDeliveryAddresses',
+        handler: async (request, reply) => {
+            serverUtils.triggerServerRequest({
+                request,
+                reply,
+            });
         },
-    },
-}, (request, reply) => {
-    serverUtils.triggerServerRequest({
-        request,
-        reply,
-    });
-});
-
-server.route.post('/api/deleteDeliveryAddresses', {
-    tags: ['api'],
-    validate: {
-        payload: {
-            channel: Joi.string().required(),
-            brand: Joi.string().required(),
-            eventId: Joi.string().required(),
-            addressId: Joi.string().required(),
+        options: {
+          tags: ['api'],
+          validate: {
+            payload: Joi.object({
+                channel: Joi.string().required(),
+                brand: Joi.string().required(),
+                eventId: Joi.string().required(),
+            }),
+          }
+        }
+      },{
+        method: 'POST',
+        path: '/api/deleteDeliveryAddresses',
+        handler: async (request, reply) => {
+            serverUtils.triggerServerRequest({
+                request,
+                reply,
+            });
         },
-    },
-}, (request, reply) => {
-    serverUtils.triggerServerRequest({
-        request,
-        reply,
-    });
-});
-
-server.route.post('/api/assignAddress', {
-    tags: ['api'],
-    validate: {
-        payload: {
-            brand: Joi.string().required(),
-            channel: Joi.string().required(),
-            eventId: Joi.string().required(),
-            addressId1: Joi.string().required(),
-            celebrityId1: Joi.string().required(),
-            addressId2: Joi.string().allow(''),
-            celebrityId2: Joi.string().allow(''),
-            addressId3: Joi.string().allow(''),
-            celebrityId3: Joi.string().allow(''),
+        options: {
+          tags: ['api'],
+          validate: {
+            payload: Joi.object({
+                channel: Joi.string().required(),
+                brand: Joi.string().required(),
+                eventId: Joi.string().required(),
+                addressId: Joi.string().required(),
+            }),
+          }
+        }
+      },{
+        method: 'POST',
+        path: '/api/assignAddress',
+        handler: async (request, reply) => {
+            serverUtils.triggerServerRequest({
+                request,
+                reply,
+            });
         },
-    },
-}, (request, reply) => {
-    serverUtils.triggerServerRequest({
-        request,
-        reply,
-    });
-});
+        options: {
+          tags: ['api'],
+          validate: {
+            payload: Joi.object({
+                brand: Joi.string().required(),
+                channel: Joi.string().required(),
+                eventId: Joi.string().required(),
+                addressId1: Joi.string().required(),
+                celebrityId1: Joi.string().required(),
+                addressId2: Joi.string().allow(''),
+                celebrityId2: Joi.string().allow(''),
+                addressId3: Joi.string().allow(''),
+                celebrityId3: Joi.string().allow(''),
+            }),
+          }
+        }
+      },
+    ]
+}
 
 
