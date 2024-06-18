@@ -12,7 +12,16 @@ const _ = require('lodash'),
     reports =require("./modules/reports/api"),
     returns = require("./modules/return/api"),
     verificationDoc = require("./modules/verificationDocuments/api"),
+    printapi = require("./modules/print/api"),
+    predeterminedList = require("./modules/predeterminedLists/api"),
+    eventSearch = require("./modules/eventsearch/api"),
+    eventManagementAddGift = require("./modules/eventMangementGiftList/addGiftItemBySKUID/api"),
+    eventManagementGetRegalos =  require("./modules/eventMangementGiftList/getRegalosRegistrados/api"),
+    eventManagementPerPurchase = require("./modules/eventMangementGiftList/personalPurchase/api"),
+    eventManagementRegaloRecib = require("./modules/eventMangementGiftList/regaloRecibidos/api"),
 
-    Routes = _.unionBy(accountSummary,activityLogs,cachecontrols,changeOfEvent,contract,delivery,eventCreation,getState,labels,user,reports,returns,verificationDoc);
+    Routes = _.unionBy(accountSummary,activityLogs,cachecontrols,changeOfEvent,contract,delivery,
+        eventCreation,getState,labels,user,reports,returns,verificationDoc,printapi,
+        predeterminedList,eventSearch,eventManagementAddGift,eventManagementGetRegalos,eventManagementPerPurchase,eventManagementRegaloRecib);
 
  export const ApiRoutes = Routes;
