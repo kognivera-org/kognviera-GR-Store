@@ -1,24 +1,33 @@
 import Joi from 'joi'
 import axios from 'axios'
 import serverEndpoints from 'server/serverEndpoints';
-import { server, models } from 'hails'
+// import { server, models } from 'hails'
 import serverUtils from '../../utils/serverUtils';
 
-server.route.post('/api/getActivityLog', {
-    tags: ['api'],
-    validate: {
-        payload: {
-            channel: Joi.string().required(),
-            brand: Joi.string().required(),
-            performedUserId: Joi.string().required(),
-            viewCompleteLog: Joi.string().required(),
-            filterParam: Joi.string().optional().allow(),
+module.exports = function () {
+    return [
+      {
+        method: 'POST',
+        path: '/api/getActivityLog',
+        handler: async (request, reply) => {
+            request.path = '/api/daytrack';
+            serverUtils.triggerServerRequest({
+                request,
+                reply,
+            });
+        },
+        options: {
+          tags: ['api'],
+          validate: {
+            payload: Joi.object({
+                channel: Joi.string().required(),
+                brand: Joi.string().required(),
+                performedUserId: Joi.string().required(),
+                viewCompleteLog: Joi.string().required(),
+                filterParam: Joi.string().optional().allow(),
+            }),
+          }
         }
-    }
-}, (request, reply) => {
-    request.path = '/api/daytrack';
-    serverUtils.triggerServerRequest({
-        request,
-        reply,
-    });
-});
+      },
+    ]
+}
