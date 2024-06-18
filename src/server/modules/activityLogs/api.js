@@ -1,7 +1,7 @@
 import Joi from 'joi'
 import axios from 'axios'
 import serverEndpoints from 'server/serverEndpoints';
-import { server, models } from 'hails'
+// import { server, models } from 'hails'
 import serverUtils from '../../utils/serverUtils';
 
 module.exports = function () {

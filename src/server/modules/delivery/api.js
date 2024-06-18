@@ -2,7 +2,7 @@ import Joi from 'joi'
 import Boom from 'boom'
 import axios from 'axios'
 import serverEndpoints from 'server/serverEndpoints';
-import { server, models } from 'hails'
+// import { server, models } from 'hails'
 import 'babel-polyfill'
 import serverUtils from '../../utils/serverUtils';
 

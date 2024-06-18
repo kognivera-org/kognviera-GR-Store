@@ -2,11 +2,11 @@ import Joi from 'joi'
 import Boom from 'boom'
 import axios from 'axios'
 import serverEndpoints from 'server/serverEndpoints'
-import { server, models } from 'hails'
+// import { server, models } from 'hails'
 import appconfig from '../../../config/appconfig'
 import serverUtils from '../../utils/serverUtils'
 
-const { User } = models
+// const { User } = models
 
 module.exports = function () {
   return [
