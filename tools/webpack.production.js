@@ -40,6 +40,11 @@ getSettings = env => {
 module.exports = {
   devtool: 'source-map',
   context: path.resolve(__dirname, '..'),
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+},
   entry: {
     main: [
       // 'bootstrap-sass!./src/theme/bootstrap.config.prod.js',
