@@ -22,12 +22,12 @@ module.exports = function () {
                 });
                 if(res.header)
                     {
-                        return reply.response(res).header('gr-hostname', res.header)
+                        return reply.response(res.data).header('gr-hostname', res.header)
                          
                     }
                     else 
                     {
-                        return reply.response(res)
+                        return reply.response(res.data)
                     }
 
                 //console.log("======,abc===",abc)
@@ -56,12 +56,12 @@ module.exports = function () {
                 });
                 if(res.header)
                     {
-                        return reply.response(res).header('gr-hostname', res.header)
+                        return reply.response(res.data).header('gr-hostname', res.header)
                          
                     }
                     else 
                     {
-                        return reply.response(res)
+                        return reply.response(res.data)
                     }
             },
             options: {
