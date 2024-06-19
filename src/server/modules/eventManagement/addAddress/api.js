@@ -2,33 +2,53 @@ import Joi from 'joi'
 // import Boom from 'boom';
 import axios from 'axios'
 import 'babel-polyfill'
-import { server } from 'hails'
+// import { server } from 'hails'
 import serverEndpoints from 'server/serverEndpoints'
 import appconfig from '../../../../config/appconfig'
 import serverUtils from '../../../utils/serverUtils'
 // import { server, models } from 'hails';
 
-server.route.post('/api/getAdressSearch', {
-  tags: ['api'],
-  validate: {
-    payload: {
-      channel: Joi.string().required(),
-      brand: Joi.string().required(),
-      eventId: Joi.string().required(),
-    },
-  },
-}, (request, reply) => {
-  serverUtils.triggerServerRequest({
-    request,
-    reply,
-  })
-})
-
-server.route.post('/api/addAddressGR', {
-  tags: ['api'],
-  validate: {
-    payload: {
-      channel: Joi.string().required(),
+module.exports = function () {
+  return [
+    {
+      method: 'POST',
+      path: '/api/getAdressSearch',
+      handler: async (request, reply) => {
+        serverUtils.triggerServerRequest({
+          request,
+          reply,
+        })
+      },
+      options: {
+        tags: ['api'],
+        validate: {
+          payload: Joi.object({
+            channel: Joi.string().required(),
+            brand: Joi.string().required(),
+            eventId: Joi.string().required(),
+          }),
+        }
+      }
+    },{
+      method: 'POST',
+      path: '/api/addAddressGR',
+      handler: async (request, reply) => {
+        serverUtils.triggerServerRequest({
+          request,
+          reply,
+          transformRequest: (requestObj) => {
+            if (requestObj.payload.state === appconfig.states.Cdmx) {
+              requestObj.payload.state = appconfig.states.Distrito_Federal
+            }
+            return requestObj
+          },
+        })
+      },
+      options: {
+        tags: ['api'],
+        validate: {
+          payload: Joi.object({
+            channel: Joi.string().required(),
       brand: Joi.string().required(),
       profileId: Joi.string().allow(''),
       ecommAddressId: Joi.string().allow(''),
@@ -61,17 +81,9 @@ server.route.post('/api/addAddressGR', {
       cellular: Joi.number().optional().allow(''),
       otherColony: Joi.string().optional().allow(''),
       landmark: Joi.string().optional().allow(''),
-    },
-  },
-}, (request, reply) => {
-  serverUtils.triggerServerRequest({
-    request,
-    reply,
-    transformRequest: (requestObj) => {
-      if (requestObj.payload.state === appconfig.states.Cdmx) {
-        requestObj.payload.state = appconfig.states.Distrito_Federal
+          }),
+        }
       }
-      return requestObj
     },
-  })
-})
+  ]
+}
