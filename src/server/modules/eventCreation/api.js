@@ -14,10 +14,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/getEventCategories',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         })
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -32,12 +38,17 @@ module.exports = function () {
       method: 'POST',
       path: '/api/categorySpecificEvents',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
           cacheKey: request.payload.categoryType,
         })
-      
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -53,10 +64,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/addressSearch',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         })
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -75,7 +92,7 @@ module.exports = function () {
       method: 'POST',
       path: '/api/isProfileVerified',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest([
+        let res = await serverUtils.triggerServerRequest([
           {
             request,
             reply,
@@ -96,6 +113,12 @@ module.exports = function () {
               return requestObj
             },
           }])
+          if (res.header) {
+            return reply.response(res.data).header('gr-hostname', res.header)
+          }
+          else {
+              return reply.response(res.data)
+          }
       },
       options: {
         tags: ['api'],
@@ -112,7 +135,7 @@ module.exports = function () {
       method: 'POST',
       path: '/api/validateEventName',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
           transformRequest: (requestObj) => {
@@ -125,6 +148,12 @@ module.exports = function () {
           }),
         },
         )
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -143,11 +172,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/coOwnerEligible',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         })
-      
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -165,7 +199,7 @@ module.exports = function () {
       method: 'POST',
       path: '/api/createProfile',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
           transformRequest: (requestObj) => {
@@ -180,6 +214,12 @@ module.exports = function () {
             alias: requestObj.alias,
           }),
         })
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -209,10 +249,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/createEvent',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         })
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -289,7 +335,7 @@ module.exports = function () {
       method: 'POST',
       path: '/api/createEventAddAddress',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
           transformRequest: (requestObj) => {
@@ -304,7 +350,12 @@ module.exports = function () {
             landmark: requestObj.landmark,
           }),
         })
-      
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -346,7 +397,7 @@ module.exports = function () {
       method: 'POST',
       path: '/api/createEventUpdateAddress',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
           transformRequest: (requestObj) => {
@@ -361,7 +412,12 @@ module.exports = function () {
             landmark: requestObj.landmark,
           }),
         })
-      
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -405,11 +461,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/getDeliveryAddressesForInstore',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         })
-      
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -425,11 +486,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/saveOwnerDetails',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         })
-      
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -488,11 +554,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/displayDilisaCard',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         })
-      
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],

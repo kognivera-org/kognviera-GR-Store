@@ -13,7 +13,7 @@ module.exports = function () {
       method: 'POST',
       path: '/api/getEventDetails',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
           transformResponse: (response) => {
@@ -24,6 +24,12 @@ module.exports = function () {
             }
           }
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api']
@@ -32,10 +38,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/getGiftListGuestView',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -56,10 +68,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/setFavouriteGift',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],

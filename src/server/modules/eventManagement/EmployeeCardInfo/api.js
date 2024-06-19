@@ -25,10 +25,16 @@ module.exports = function () {
                 const error = { status: { errorMessage: 'Los datos de la tarjeta ingresada no pertenecen a un empleado', errorCode: '', status: 'failure' } }
                 return reply.response(error)
             } else {
-                serverUtils.triggerServerRequest({
+                let res = await serverUtils.triggerServerRequest({
                     request,
                     reply,
                 });
+                if (res.header) {
+                    return reply.response(res.data).header('gr-hostname', res.header)
+                }
+                else {
+                    return reply.response(res.data)
+                }
             }
         },
         options: {
@@ -51,11 +57,16 @@ module.exports = function () {
         method: 'POST',
         path: '/api/removeDilisaCard',
         handler: async (request, reply) => {
-            serverUtils.triggerServerRequest({
+            let res = await serverUtils.triggerServerRequest({
                 request,
                 reply,
             });
-        
+            if (res.header) {
+                return reply.response(res.data).header('gr-hostname', res.header)
+            }
+            else {
+                return reply.response(res.data)
+            }
         
         },
         options: {

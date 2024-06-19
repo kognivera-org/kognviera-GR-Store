@@ -2,57 +2,90 @@ import Joi from 'joi';
 // import Boom from 'boom';
 import axios from 'axios';
 import 'babel-polyfill';
-import { server } from 'hails';
+// import { server } from 'hails';
 import serverEndpoints from 'server/serverEndpoints';
 // import { server, models } from 'hails';
 import serverUtils from '../../../utils/serverUtils';
 
-server.route.post('/api/createNotes', {
-    tags: ['api'],
-    validate: {
-        payload: {
-            channel: Joi.string().required(),
-            brand: Joi.string().required(),
-            eventId: Joi.string().required(),
-            note: Joi.string().required(),
+module.exports = function () {
+    return [
+      {
+        method: 'POST',
+        path: '/api/createNotes',
+        handler: async (request, reply) => {
+            let res = await serverUtils.triggerServerRequest({
+                request,
+                reply,
+            });
+            if (res.header) {
+                return reply.response(res.data).header('gr-hostname', res.header)
+            }
+            else {
+                return reply.response(res.data)
+            }
         },
-    },
-}, (request, reply) => {
-    serverUtils.triggerServerRequest({
-        request,
-        reply,
-    });
-});
-
-server.route.post('/api/displayNotes', {
-    tags: ['api'],
-    validate: {
-        payload: {
-            channel: Joi.string().required(),
-            brand: Joi.string().required(),
-            eventId: Joi.string().required()
+        options: {
+          tags: ['api'],
+          validate: {
+            payload: Joi.object({
+                channel: Joi.string().required(),
+                brand: Joi.string().required(),
+                eventId: Joi.string().required(),
+                note: Joi.string().required(),
+            }),
+          }
+        }
+      },{
+        method: 'POST',
+        path: '/api/displayNotes',
+        handler: async (request, reply) => {
+            let res = await serverUtils.triggerServerRequest({
+                request,
+                reply,
+            });
+            if (res.header) {
+                return reply.response(res.data).header('gr-hostname', res.header)
+            }
+            else {
+                return reply.response(res.data)
+            }
         },
-    },
-}, (request, reply) => {
-    serverUtils.triggerServerRequest({
-        request,
-        reply,
-    });
-});
-
-server.route.post('/api/deleteNotes', {
-    tags: ['api'],
-    validate: {
-        payload: {
-            channel: Joi.string().required(),
-            brand: Joi.string().required(),
-            eventId: Joi.string().required(),
-            selectedNoteId: Joi.string().required()
+        options: {
+          tags: ['api'],
+          validate: {
+            payload: Joi.object({
+                channel: Joi.string().required(),
+                brand: Joi.string().required(),
+                eventId: Joi.string().required()
+            }),
+          }
+        }
+      },{
+        method: 'POST',
+        path: '/api/deleteNotes',
+        handler: async (request, reply) => {
+            let res = await serverUtils.triggerServerRequest({
+                request,
+                reply,
+            });
+            if (res.header) {
+                return reply.response(res.data).header('gr-hostname', res.header)
+            }
+            else {
+                return reply.response(res.data)
+            }
         },
-    },
-}, (request, reply) => {
-    serverUtils.triggerServerRequest({
-        request,
-        reply,
-    });
-});
+        options: {
+          tags: ['api'],
+          validate: {
+            payload: Joi.object({
+                channel: Joi.string().required(),
+                brand: Joi.string().required(),
+                eventId: Joi.string().required(),
+                selectedNoteId: Joi.string().required()
+            }),
+          }
+        }
+      },
+    ]
+}

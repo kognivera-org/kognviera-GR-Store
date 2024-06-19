@@ -1,39 +1,63 @@
 import Joi from 'joi';
 import axios from 'axios';
 import 'babel-polyfill';
-import { server } from 'hails';
+// import { server } from 'hails';
 import serverEndpoints from 'server/serverEndpoints';
 import serverUtils from '../../../utils/serverUtils';
 
-server.route.post('/api/checkEventForFraud', {
-    tags: ['api'],
-    validate: {
-        payload: {
-            channel: Joi.string().required(),
-            brand: Joi.string().required(),
-            eventId: Joi.string().required(),
+module.exports = function () {
+    return [
+      {
+        method: 'POST',
+        path: '/api/checkEventForFraud',
+        handler: async (request, reply) => {
+            let res = await serverUtils.triggerServerRequest({
+                request,
+                reply,
+            });
+            if (res.header) {
+                return reply.response(res.data).header('gr-hostname', res.header)
+            }
+            else {
+                return reply.response(res.data)
+            }
         },
-    },
-}, async (request, reply) => {
-    serverUtils.triggerServerRequest({
-        request,
-        reply,
-    });
-});
-
-server.route.post('/api/updateEventStatus', {
-    tags: ['api'],
-    validate: {
-        payload: {
-            channel: Joi.string().required(),
-            brand: Joi.string().required(),
-            eventId: Joi.string().required(),
-            actionType: Joi.string().required()
+        options: {
+          tags: ['api'],
+          validate: {
+            payload: Joi.object({
+                channel: Joi.string().required(),
+                brand: Joi.string().required(),
+                eventId: Joi.string().required(),
+            }),
+          }
+        }
+      },{
+        method: 'POST',
+        path: '/api/updateEventStatus',
+        handler: async (request, reply) => {
+            let res = await serverUtils.triggerServerRequest({
+                request,
+                reply,
+            });
+            if (res.header) {
+                return reply.response(res.data).header('gr-hostname', res.header)
+            }
+            else {
+                return reply.response(res.data)
+            }
         },
-    },
-}, async (request, reply) => {
-    serverUtils.triggerServerRequest({
-        request,
-        reply,
-    });
-});
+        options: {
+          tags: ['api'],
+          validate: {
+            payload: Joi.object({
+                channel: Joi.string().required(),
+                brand: Joi.string().required(),
+                eventId: Joi.string().required(),
+                actionType: Joi.string().required()
+            }),
+          }
+        }
+      },
+    ]
+}

@@ -12,7 +12,7 @@ module.exports = function () {
         method: 'POST',
         path: '/api/saveEditEventInfo',
         handler: async (request, reply) => {
-            serverUtils.triggerServerRequest({
+            let res = await serverUtils.triggerServerRequest({
                 request,
                 reply,
                 transformRequest: requestObj => {
@@ -20,6 +20,12 @@ module.exports = function () {
                     return requestObj;
                 },
             });
+            if (res.header) {
+                return reply.response(res.data).header('gr-hostname', res.header)
+            }
+            else {
+                return reply.response(res.data)
+            }
         },
         options: {
           tags: ['api'],
@@ -45,7 +51,7 @@ module.exports = function () {
         method: 'POST',
         path: '/api/addEventInfo',
         handler: async (request, reply) => {
-            serverUtils.triggerServerRequest({
+            let res = await serverUtils.triggerServerRequest({
                 request,
                 reply,
                 transformRequest: requestObj => {
@@ -53,6 +59,12 @@ module.exports = function () {
                     return requestObj;
                 },
             });
+            if (res.header) {
+                return reply.response(res.data).header('gr-hostname', res.header)
+            }
+            else {
+                return reply.response(res.data)
+            }
         },
         options: {
           tags: ['api'],
@@ -79,11 +91,16 @@ module.exports = function () {
         method: 'POST',
         path: '/api/setEventDate',
         handler: async (request, reply) => {
-            serverUtils.triggerServerRequest({
+            let res = await serverUtils.triggerServerRequest({
                 request,
                 reply,
             });
-        
+            if (res.header) {
+                return reply.response(res.data).header('gr-hostname', res.header)
+            }
+            else {
+                return reply.response(res.data)
+            }
         },
         options: {
           tags: ['api'],

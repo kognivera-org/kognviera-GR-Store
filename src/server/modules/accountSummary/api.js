@@ -72,7 +72,7 @@ module.exports = function () {
       path: '/api/accountStatementDetails',
       handler: async (request, reply) => {
         // log.debug('api/accountStatementDetails:request-------', request);
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
           transformResponse: (response) => {
@@ -94,6 +94,12 @@ module.exports = function () {
             }
           },
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+      }
+      else {
+          return reply.response(res.data)
+      }
       },
       options: {
         tags: ['api'],
@@ -110,10 +116,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/purchasedItemSummaryInfo',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+      }
+      else {
+          return reply.response(res.data)
+      }
       },
       options: {
         tags: ['api'],
@@ -130,10 +142,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/purchasedItemsDetails',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -158,10 +176,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/bonusDetails',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -177,10 +201,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/inTransit',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -196,10 +226,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/accountPartialTransferDetails',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+      }
+      else {
+          return reply.response(res.data)
+      }
       },
       options: {
         tags: ['api'],
@@ -215,10 +251,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/getEventSummaryInfo',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -236,7 +278,7 @@ module.exports = function () {
       method: 'POST',
       path: '/api/submitTransference',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
           transformResponse: (response) => {
@@ -246,6 +288,12 @@ module.exports = function () {
             }
           },
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -281,10 +329,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/verifyStoreAssociate',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -301,7 +355,7 @@ module.exports = function () {
       method: 'POST',
       path: '/api/transferenceOptions',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
           transformResponse: (response) => {
@@ -311,6 +365,12 @@ module.exports = function () {
             }
           },
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -329,10 +389,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/calculateCommision',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -352,10 +418,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/deleteBankOrCardDetails',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -371,10 +443,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/getEwalletInfo',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -459,10 +537,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/saveBankOrCardDetails',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+      }
+      else {
+          return reply.response(res.data)
+      }
       },
       options: {
         tags: ['api'],
@@ -478,7 +562,7 @@ module.exports = function () {
       method: 'POST',
       path: '/api/submitRefundTransaction',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest(
+        let res = await serverUtils.triggerServerRequest(
           // [
           // {
           //   request,
@@ -511,6 +595,12 @@ module.exports = function () {
           }
           // ]
         );
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -579,10 +669,16 @@ module.exports = function () {
       method: 'POST',
       path: '/api/initiateEventCloseProcess',
       handler: async (request, reply) => {
-        serverUtils.triggerServerRequest({
+        let res = await serverUtils.triggerServerRequest({
           request,
           reply,
         });
+        if (res.header) {
+          return reply.response(res.data).header('gr-hostname', res.header)
+        }
+        else {
+            return reply.response(res.data)
+        }
       },
       options: {
         tags: ['api'],
@@ -622,10 +718,16 @@ module.exports = function () {
           promise(request)
             .then(
               (resolved) => {
-                serverUtils.triggerServerRequest({
+                let res = serverUtils.triggerServerRequest({
                   request: resolved,
                   reply,
                 });
+                if (res.header) {
+                  return reply.response(res.data).header('gr-hostname', res.header)
+                }
+                else {
+                    return reply.response(res.data)
+                }
               },
               (reject) => {
                 log.error("received xx-error /api/sendmail :: ", reject);

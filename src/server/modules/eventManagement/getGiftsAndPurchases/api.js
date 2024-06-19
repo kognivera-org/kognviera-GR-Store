@@ -2,22 +2,37 @@ import Joi from 'joi';
 // import Boom from 'boom';
 import axios from 'axios';
 import 'babel-polyfill';
-import { server } from 'hails';
+// import { server } from 'hails';
 import serverEndpoints from 'server/serverEndpoints';
 import serverUtils from '../../../utils/serverUtils';
 
-server.route.post('/api/getGiftsAndPurchases', {
-    tags: ['api'],
-    validate: {
-        payload: {
-            channel: Joi.string().required(),
-            brand: Joi.string().required(),
-            eventId: Joi.string().required(),
+module.exports = function () {
+    return [
+      {
+        method: 'POST',
+        path: '/api/getGiftsAndPurchases',
+        handler: async (request, reply) => {
+            let res = await serverUtils.triggerServerRequest({
+                request,
+                reply,
+            });
+            if (res.header) {
+                return reply.response(res.data).header('gr-hostname', res.header)
+            }
+            else {
+                return reply.response(res.data)
+            }
         },
-    },
-}, (request, reply) => {
-    serverUtils.triggerServerRequest({
-        request,
-        reply,
-    });
-});
+        options: {
+          tags: ['api'],
+          validate: {
+            payload: Joi.object({
+                channel: Joi.string().required(),
+                brand: Joi.string().required(),
+                eventId: Joi.string().required(),
+            }),
+          }
+        }
+      },
+    ]
+}
