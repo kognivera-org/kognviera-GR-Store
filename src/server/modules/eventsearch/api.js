@@ -8,7 +8,7 @@ import serverUtils from '../../utils/serverUtils';
 module.exports = function () {
     return [
         {
-            method: 'POST',
+            method: 'GET',
             path: '/api/getEventsBySearchablePropertiesPerStore',
             handler: async (request, reply) => {
                 let res =  await serverUtils.triggerServerRequest({
