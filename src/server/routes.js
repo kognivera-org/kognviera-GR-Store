@@ -22,6 +22,9 @@ const _ = require('lodash'),
     getGiftsAndPurchases = require("./modules/eventManagement/getGiftsAndPurchases/api")(),
     header = require("./modules/eventManagement/Header/api")(),
     notes = require("./modules/eventManagement/notes/api")(),
+    openingGift = require("./modules/eventManagement/openingGift/api")(),
+    plasticCard = require("./modules/eventManagement/plasticCard/api")(),
+    prefferedDeliveryday = require("./modules/eventManagement/preferredDeliveryDay/api")(),
     getState = require("./modules/dashboard/api")(),
     labels = require("./modules/labels/api")(),
     user = require("./modules/user/api")(),
@@ -38,6 +41,6 @@ const _ = require('lodash'),
 
     Routes = _.unionBy(accountSummary,activityLogs,addPlasticCard,cachecontrols,changeOfEvent,contract,delivery,
         eventCreation,eventdetails,addAddress,closingGiftPriceRange,editAddress,editEventInfo,employeeCardInfo,eventAddress,eventGralInfo,failedTransferences,fraudManagement,getAccountPartialTransferDetails,getEventAccountStatementDetails,getGiftsAndPurchases,header,notes,getState,labels,user,reports,returns,verificationDoc,printapi,
-        predeterminedList,eventSearch,eventManagementAddGift,eventManagementGetRegalos,eventManagementPerPurchase,eventManagementRegaloRecib);
+        predeterminedList,openingGift,plasticCard,prefferedDeliveryday,eventSearch,eventManagementAddGift,eventManagementGetRegalos,eventManagementPerPurchase,eventManagementRegaloRecib);
 
  export const ApiRoutes = Routes;
