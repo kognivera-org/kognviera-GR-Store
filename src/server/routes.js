@@ -46,6 +46,6 @@ const _ = require('lodash'),
         fraudManagement,getAccountPartialTransferDetails,getEventAccountStatementDetails,
         getGiftsAndPurchases,header,notes,getState,
         labels,user,reports,returns,verificationDoc,printapi,
-        predeterminedList,eventSearch,eventManagementAddGift,eventManagementGetRegalos,eventManagementPerPurchase,eventManagementRegaloRecib);
+        predeterminedList,eventSearch,eventManagementAddGift,eventManagementGetRegalos,eventManagementPerPurchase,eventManagementRegaloRecib,plasticCard);
 
  export const ApiRoutes = Routes;

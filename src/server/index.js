@@ -47,7 +47,7 @@ const start = async () => {
     server.route({
       method: '*',
       path: '/{p*}',
-      handler: (request, h) => {
+      handler: async (request, h) => {
         if (request.path !== '/') {
           const fPath = path.resolve(`${__dirname}/../../static/${request.path}`);
           try {
@@ -75,7 +75,13 @@ const start = async () => {
 
         function hydrateOnClient() {
           return new Promise((resolve, reject) => {
-            resolve(h.response(`<!doctype html>${ReactDOM.renderToString(<Html assets={webpackIsomorphicTools.assets()} store={store} />)}`))
+            resolve(h.response(`<!doctype html>${ReactDOM.renderToString(<Html
+              assets={webpackIsomorphicTools.assets()}
+              store={store}
+              clientSettings={global.clientSettings}
+              version={global.version}
+              GTMAuth={settings.taggingAuth}
+            />)}`))
           })
         }
 
