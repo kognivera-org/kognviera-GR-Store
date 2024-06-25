@@ -44,8 +44,8 @@ const _ = require('lodash'),
         eventCreation,eventdetails,addAddress,closingGiftPriceRange,editAddress,
         editEventInfo,employeeCardInfo,eventAddress,eventGralInfo,failedTransferences,
         fraudManagement,getAccountPartialTransferDetails,getEventAccountStatementDetails,
-        getGiftsAndPurchases,header,notes,getState,
+        getGiftsAndPurchases,header,notes,openingGift,getState,
         labels,user,reports,returns,verificationDoc,printapi,
-        predeterminedList,eventSearch,eventManagementAddGift,eventManagementGetRegalos,eventManagementPerPurchase,eventManagementRegaloRecib,plasticCard);
+        predeterminedList,eventSearch,eventManagementAddGift,eventManagementGetRegalos,eventManagementPerPurchase,eventManagementRegaloRecib,plasticCard,prefferedDeliveryday);
 
  export const ApiRoutes = Routes;
