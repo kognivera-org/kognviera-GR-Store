@@ -52,7 +52,7 @@ class AddEventInfo extends Component {
     };
     this.handleShowValidation = this.handleShowValidation.bind(this);
   }
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     if (!this.props.labels) {
       this.props.getLabels();
     }

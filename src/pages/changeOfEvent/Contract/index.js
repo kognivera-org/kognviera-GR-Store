@@ -54,7 +54,7 @@ class EventContract extends Component {
     this.props.router.push(commonUtil.generateRedirect(routeconfig.celebratedcardinfo))
   }
 
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     if (this.props.eventDetailsInfo === undefined) {
       this.props.router.push(commonUtil.generateRedirect(routeconfig.root))
     }

@@ -54,7 +54,7 @@ class StatementAccountSummary extends Component {
     };
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.props.getEventAccountStatementDetails(this.eventId);
   }
   onActivateWallet = () => {

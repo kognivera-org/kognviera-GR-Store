@@ -53,7 +53,7 @@ class EventHeader extends Component {
     }
     return params;
   }
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     let params = this.getParams();
     if (params.eventId) {
       this.props.getDisplayEventStatusDropdown(params);

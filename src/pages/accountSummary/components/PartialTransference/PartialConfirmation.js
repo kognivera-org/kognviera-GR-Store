@@ -37,7 +37,7 @@ export default class PartialConfirmation extends Component {
     };
     this.eventDetailsInfo = props.location.state.eventDetailsInfo;
   }
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.setState({ eWalletCreatedMessage: this.props.location.state.submitTransferenceDetails.message });
   }
   componentDidMount() {

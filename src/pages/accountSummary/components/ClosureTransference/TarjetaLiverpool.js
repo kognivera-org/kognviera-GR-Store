@@ -16,7 +16,7 @@ export default class ClosureTarjetaLiverpool extends Component {
     };
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     if (this.state.transferenceData.employeeCardInfo && this.state.transferenceData.employeeCardInfo.length === 1) {
       this.props.disableContinueButton(false);
     }

@@ -36,7 +36,7 @@ class CelebratedCardInfo extends Component {
     this.deletedCardInfo.push(deletedCardInfo)
   }
 
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     if (this.props.eventdetail === undefined) {
       this.props.router.push(CommonUtil.generateRedirect(routeconfig.root))
     }

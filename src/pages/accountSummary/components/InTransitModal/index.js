@@ -29,7 +29,7 @@ class InTransitModal extends Component {
       show: false,
     };
   }
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
 
   }
 

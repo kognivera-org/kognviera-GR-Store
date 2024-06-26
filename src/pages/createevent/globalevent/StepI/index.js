@@ -31,7 +31,7 @@ class StepI extends Component {
     isNextStepDisabled: true,
     successMessage: false
   }
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     if (this.props.eventData === undefined) {
       this.props.router.push(`/${routeconfig.globalstepa}`)
     }

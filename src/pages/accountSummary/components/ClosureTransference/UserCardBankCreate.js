@@ -29,7 +29,7 @@ export default class UserCardBankCreate extends React.Component {
     };
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     if (this.state.transferenceData.savedCardsInfo && this.state.transferenceData.savedCardsInfo.length > 0) {
       this.setState({ isUserHasCards: true, isAddBankCard: false });
     } else {

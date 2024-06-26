@@ -12,7 +12,7 @@ import { log } from 'util';
 
 class DayTracker extends Component {
 
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     const userObj = (typeof window != 'undefined') && window.localStorage.getItem('user')
     const userFromSession = userObj && JSON.parse(userObj);
     const filterParam = this.props.location.query.filterParam;

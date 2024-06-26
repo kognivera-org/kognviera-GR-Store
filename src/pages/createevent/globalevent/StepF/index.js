@@ -25,7 +25,7 @@ class StepF extends Component {
     displayDeliveryAddresses: false,
   }
 
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     if (this.props.eventData === undefined) {
       this.props.router.push(commonUtil.generateRedirect(routeconfig.root));
     }

@@ -23,7 +23,7 @@ export default class ClosingGift extends React.Component {
     this.giftNames = '';
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     // 300005007
     getOpeningOrClosingGiftDetailsForEvent({ eventId: this.eventId, type: 'closing' }, (res) => {
       if (res.data) {

@@ -14,7 +14,7 @@ import appconfig from '../../../config/appconfig';
 )
 
 class ChangeOfEvent extends Component {
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     this.props.getLabels()
   }
   render() {

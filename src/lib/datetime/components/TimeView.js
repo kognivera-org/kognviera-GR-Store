@@ -107,7 +107,7 @@ export default class TimeView extends React.Component {
 			])
 		);
 	}
-	componentWillMount = () => {
+	UNSAFE_componentWillMount = () => {
 		var me = this;
 		me.timeConstraints = {
 			hours: {
