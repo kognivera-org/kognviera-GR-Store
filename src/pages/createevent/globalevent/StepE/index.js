@@ -74,7 +74,7 @@ class StepE extends Component {
     this.props.router.push(commonUtil.generateRedirect(routePath));
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     if (!this.props.labels) {
       this.props.getLabels()
     }

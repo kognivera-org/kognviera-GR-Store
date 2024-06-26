@@ -30,7 +30,7 @@ class StepD extends Component {
     errors: {},
   }
 
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     if (!this.props.labels) {
       this.props.getLabels()
     }

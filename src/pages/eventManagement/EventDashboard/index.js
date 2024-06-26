@@ -64,7 +64,7 @@ class EventDashboard extends Component {
     actionType: ''
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     const eventId = !this.isEmpty(this.props.params) && this.props.params.eventId;
     let params = this.getParams();
     this.props.checkEventForFraud(params);

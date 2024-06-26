@@ -24,7 +24,7 @@ class StepB extends Component {
     error: '',
   }
 
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     if (!this.props.labels) {
       this.props.getLabels()
     }

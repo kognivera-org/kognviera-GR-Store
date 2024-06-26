@@ -84,7 +84,7 @@ class SearchForReturn extends Component {
         </div >)
     }
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         this.props.clearSearch();
     }
 

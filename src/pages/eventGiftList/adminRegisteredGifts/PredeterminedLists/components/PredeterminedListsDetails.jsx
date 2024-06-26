@@ -54,7 +54,7 @@ class PredeterminedListsDetails extends Component {
 
 
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         this.props.getpredeterminedListPageHeaderInfo(this.props.brand, this.props.params.repoId);
         this.props.getPredeterminedListPageItemsInfo(this.props.brand, this.props.params.repoId, '1');
 

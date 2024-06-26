@@ -34,7 +34,7 @@ class Contract extends Component {
     }
   }
 
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     const event = this.props.event;
     const isEmployee = (event && event.eventDetailsInfo && event.eventDetailsInfo.employee) || false;
     event && event.eventDetailsInfo && this.props.getContractDetails(event.eventDetailsInfo.eventType, isEmployee.toString(), this.props.params.eventId);

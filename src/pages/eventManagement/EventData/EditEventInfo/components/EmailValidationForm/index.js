@@ -34,7 +34,7 @@ class EmailValidationForm extends Component {
             tmpVal: this.props.defaultValue
         };
     }
-    // componentWillMount = () => {
+    // UNSAFE_componentWillMount = () => {
     //     this.props.getLabels();
     // }
 

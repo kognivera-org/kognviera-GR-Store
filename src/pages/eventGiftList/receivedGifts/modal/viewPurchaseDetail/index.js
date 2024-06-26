@@ -119,7 +119,7 @@ class ViewPurchaseDetailModal extends Component {
     }
     this.props.onRemoveTicket(params)
   }
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     this.props.getLabels()
   }
   componentDidMount() {

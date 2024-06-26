@@ -35,7 +35,7 @@ class EmployeeCards extends Component {
       disableDownload: false,
     }
   }
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.props.getEmployeeCardDetails(this.props.params.eventId);
   }
   componentWillReceiveProps(nextProps) {

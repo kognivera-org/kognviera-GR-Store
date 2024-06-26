@@ -30,7 +30,7 @@ class EventInfo extends Component {
     errors: {},
   }
 
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     if (this.props.eventDetailsInfo === undefined) {
       this.props.router.push(commonUtil.generateRedirect(routeconfig.root));
     }

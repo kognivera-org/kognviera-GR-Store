@@ -9,7 +9,7 @@ import { getLabels } from '../../../../../global/Labels/actions'
     { getLabels }
 )
 class DefaultListFilter extends Component {
-    componentWillMount = () => {
+    UNSAFE_componentWillMount = () => {
         this.props.getLabels()
     }
     render() {

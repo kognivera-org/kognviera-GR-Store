@@ -51,7 +51,7 @@ export default class Monedero extends Component {
     };
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     if (this.state.transferenceData.savedWalletsInfo && this.state.transferenceData.savedWalletsInfo.length > 0) {
       this.setState({ isUserHasWallet: true });
     } else {

@@ -23,7 +23,7 @@ class AddNewCreditCard extends Component {
     errors: {},
     error: ''
   }
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     this.props.getLabels()
   }
 

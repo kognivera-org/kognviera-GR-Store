@@ -34,7 +34,7 @@ export default class ClosureDepositForm extends Component {
     this.isClosingGiftEligible = false;
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     const transferenceMethods = [];
     if (this.props.transference && this.props.transference.transferenceOptions
       && this.props.transference.transferenceOptions.transferenceMethods) {

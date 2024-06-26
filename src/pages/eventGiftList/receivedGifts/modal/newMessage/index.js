@@ -15,7 +15,7 @@ import Datetime from 'lib/datetime/DateTime';
     { getLabels }
 )
 class NewMessageModal extends Component {
-    componentWillMount = () => {
+    UNSAFE_componentWillMount = () => {
         this.props.getLabels()
     }
     state = {

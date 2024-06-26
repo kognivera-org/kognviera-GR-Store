@@ -45,7 +45,7 @@ class SelectStoreModal extends React.Component {
     this.setState({ show: true })
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.props.getStateList()
   }
 

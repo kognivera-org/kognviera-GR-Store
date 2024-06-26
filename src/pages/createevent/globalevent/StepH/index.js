@@ -26,7 +26,7 @@ class StepH extends Component {
     this.noOfCardsAssigned = 0
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     if (!this.props.labels) {
       this.props.getLabels()
     }

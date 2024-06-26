@@ -16,7 +16,7 @@ export default class CoownerVerificationForm extends Component {
     settings: {},
   };
 
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     this.state.settings = settingsFile[process.env.NODE_ENV || "development"];
   };
 
