@@ -191,6 +191,12 @@ module.exports = function () {
       method: 'POST',
       path: '/api/createProfile',
       handler: async (request, reply) => {
+        
+       // request.payload.firstName = 'test';
+        //request.payload.lastName = 'test www';
+
+        console.log("========",request.payload);
+
         let res = await serverUtils.triggerServerRequest({
           request,
           reply,
@@ -206,6 +212,7 @@ module.exports = function () {
             alias: requestObj.alias,
           }),
         })
+        console.log("========",res);
         if (res.header) {
           return reply.response(res.data).header('gr-hostname', res.header)
         }
@@ -219,8 +226,8 @@ module.exports = function () {
           payload: Joi.object({
             email: Joi.string().allow(''),
             password: Joi.string().allow(''),
-            firstName: Joi.string().required(),
-            lastName: Joi.string().required(),
+            firstName: Joi.string() || 'test',
+            lastName: Joi.string() || 'test',
             maternalName: Joi.string().allow(''),
             bdayDAY: Joi.string().allow(''),
             bdayMONTH: Joi.string().allow(''),

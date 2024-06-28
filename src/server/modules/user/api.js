@@ -16,7 +16,6 @@ module.exports = function () {
       method: 'POST',
       path: '/api/login',
       handler: async (request, reply) => {
-        console.log("--------------test")
         try {
           log.debug('xx-login-request :: test ', request.payload);
           const response = await axios.post(serverEndpoints['/api/login'], {
