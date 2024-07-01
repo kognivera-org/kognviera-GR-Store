@@ -162,13 +162,14 @@ const CommonUtil = {
     callback,
     useIframe
   ) {
-    const PdfConverter = require("jspdf");
-    const splitHtml = require("split-html");
-    const pdf = new PdfConverter("p", "mm", "a4");
+    const {jsPDF} = require("jspdf");
+    var splitHtml = require('split-html');
+    //const splitHtml = require("split-html");
+    const pdf = new jsPDF("p", "mm", "a4");
     this.pdfObj = pdf;
     const htmlDom = document.querySelector(elem);
     const innerHTML = htmlDom.innerHTML;
-    let htmlArray = splitHtml(innerHTML, ".pageBreak");
+    let htmlArray = innerHTML.split('pageBreak') //splitHtml(innerHTML, ".pageBreak");
     htmlArray = htmlArray.filter(
       (ele) => ele !== '<span class="pageBreak"></span>'
     );
