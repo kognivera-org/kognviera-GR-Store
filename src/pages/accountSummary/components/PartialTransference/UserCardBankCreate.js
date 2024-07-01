@@ -30,7 +30,7 @@ export default class UserCardBankCreate extends React.Component {
     };
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
 
   }
 

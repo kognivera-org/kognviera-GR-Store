@@ -5,7 +5,7 @@ export default class DeleteCache extends React.Component {
 
     state = {}
 
-    componentWillMount = () => {
+    UNSAFE_componentWillMount = () => {
 
     }
 

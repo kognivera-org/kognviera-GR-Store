@@ -40,7 +40,7 @@ class VerificationDocuments extends Component {
     Err: ''
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     const eventId = this.props.params && this.props.params.eventId;
     eventId && this.props.getVerificationDocuments(eventId);
   }

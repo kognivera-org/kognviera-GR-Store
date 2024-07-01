@@ -29,7 +29,7 @@ class EventDetails extends Component {
     }
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     // 300000201
     this.props.getGiftListGuestView(this.eventId, '1', (this.catId || ''), (this.price || ''))
 

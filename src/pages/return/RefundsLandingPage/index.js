@@ -32,7 +32,7 @@ class RefundsLandingPage extends Component {
         step: 1,
         walletStep: null
     }
-    // componentWillMount() {
+    // UNSAFE_componentWillMount() {
     //     if (!this.props.returnList) {
     //         let eventId = (this.props.params && this.props.params.eventId) ? this.props.params.eventId : '';
     //         this.props.router.push('/searchforreturn/' + eventId);

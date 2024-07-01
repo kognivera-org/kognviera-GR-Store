@@ -148,7 +148,7 @@ class RegisteredGifts extends Component {
     handleSuccessOpen = (data) => {
         this.successAddSkuModal.handleShow(data)
     }
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         const params = this.getParams()
         this.props.getRegisteredGiftList(params, '', '', "true")
     }

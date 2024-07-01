@@ -41,7 +41,7 @@ class PredeterminedLists extends Component {
 
   brand = this.props.params && this.props.params.brand;
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     const eventType = this.props.event && this.props.event.eventType
     eventType && this.props.getpredeterminedLandingPage(this.brand, eventType)
 

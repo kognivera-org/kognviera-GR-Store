@@ -38,7 +38,7 @@ class StatementPartialTransference extends Component {
       pdf: 'Descargando archivo',
     };
   }
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.props.getaccountPartialTransferDetails(this.eventId);
   }
 

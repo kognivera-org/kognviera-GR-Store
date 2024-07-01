@@ -47,7 +47,7 @@ class PersonalPurchasesDetail extends Component {
       pdf: 'Descargando archivo',
     }
   }
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.props.getPurchasedItemSummaryInfo(this.eventId, this.pageType)
     this.props.getPurchasedItemsDetails(this.eventId, this.pageType, this.state.filteringParameters, this.state.sortingParameters, this.state.currentPage, this.isViewAll)
   }

@@ -175,7 +175,7 @@ class SelectAddressCommon extends Component {
         return <React.Fragment>{assigneeOptions}</React.Fragment>
     }
 
-    componentWillMount = () => {
+    UNSAFE_componentWillMount = () => {
         if (this.props.eventDetailsInfo === undefined) {
             this.props.router.push(commonUtil.generateRedirect(routeconfig.root));
         }

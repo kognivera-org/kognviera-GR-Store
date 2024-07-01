@@ -37,7 +37,7 @@ class AddNewEmployeeCard extends Component {
       this.props.addUpdateEmployeeCardDetails(formValues);
     }
   }
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     if (this.props.router.location.query.cardIdx) {
       this.props.getEmployeeCardDetails(this.props.params.eventId);
     }

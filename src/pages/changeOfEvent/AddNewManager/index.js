@@ -72,7 +72,7 @@ class AddNewManager extends Component {
     }
   }
 
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     if (this.props.eventDetailsInfo === undefined) {
       this.props.router.push(commonUtil.generateRedirect(routeconfig.root));
     }

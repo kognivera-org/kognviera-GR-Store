@@ -28,7 +28,7 @@ class EventSearchResults extends Component {
     this.eventTypes = ''
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.props.executeEventSearch(this.props.location.query);
   }
 

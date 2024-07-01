@@ -16,7 +16,7 @@ export default class Pagination extends React.Component {
     };
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.gotoPage(this.state.currentPage);
   }
   componentWillReceiveProps(nextProps) {

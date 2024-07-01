@@ -16,7 +16,7 @@ import tagging from '../../../utils/tagging';
 
 @connect(() => ({}), { saveSelectedStore, loadActivityLogs })
 export default class MainDashboard extends Component {
-  componentWillMount() {}
+  UNSAFE_componentWillMount() {}
 
   componentDidMount = () => {
     localStorage.removeItem('user_host');

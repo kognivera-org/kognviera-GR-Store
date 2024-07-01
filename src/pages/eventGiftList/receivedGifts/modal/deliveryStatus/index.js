@@ -14,7 +14,7 @@ import { connect } from 'react-redux';
 )
 
 class DeliveryStatusModal extends Component {
-    componentWillMount = () => {
+    UNSAFE_componentWillMount = () => {
 
     }
     componentDidMount() {

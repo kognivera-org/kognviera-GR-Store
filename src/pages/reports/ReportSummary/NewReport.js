@@ -114,7 +114,7 @@ class NewReport extends Component {
         }
     }
 
-    componentWillMount = () => {
+    UNSAFE_componentWillMount = () => {
         //this.props.getLabels();
         if (window.intervalTimeOutId) {
             this.setState({ disableDownloadButton: true });

@@ -11,8 +11,8 @@ class HealthCheck extends Component {
         console.log('shouldComponentUpdate called');
     }
 
-    componentWillMount() {
-        console.log('componentWillMount called');
+    UNSAFE_componentWillMount() {
+        console.log('UNSAFE_componentWillMount called');
     }
 
     componentDidMount() {

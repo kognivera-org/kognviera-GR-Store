@@ -6,7 +6,7 @@ import moment from 'moment';
 import Datetime from '../../../../../lib/datetime/DateTime';
 
 class EliminatePurchaseTicketModal extends Component {
-    componentWillMount = () => {
+    UNSAFE_componentWillMount = () => {
     }
     constructor(props, context) {
         super(props, context);

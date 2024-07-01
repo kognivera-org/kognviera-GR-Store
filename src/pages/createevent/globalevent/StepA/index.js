@@ -38,7 +38,7 @@ class StepA extends Component {
     this.settings = {};
   }
 
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     if (!this.props.labels) { this.props.getLabels(); }
     this.settings = settingsFile[process.env.NODE_ENV || 'development'];
     this.props.getEventCategories();

@@ -58,7 +58,7 @@ class EventAddressInfo extends Component {
   }
 
 
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     this.props.getLabels();
     const eventId = this.props.params && this.props.params.eventId;
     eventId && this.props.getEventDeliveryAddresses(eventId);

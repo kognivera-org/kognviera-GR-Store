@@ -17,7 +17,7 @@ import { setSelectedDashboardUser, setSelectedDashboardUserFailure } from '../..
 )
 
 class ManagementMenu extends Component {
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
         // if (this.props.dashboardUser && this.props.dashboardUser.dashboardEventId != undefined && this.props.dashboardUser.dashboardEventId != '') {
         //     if (this.props.dashboardUser.dashboardEventId != this.props.params.eventId) {
         //         this.props.clearDashboardUser();
