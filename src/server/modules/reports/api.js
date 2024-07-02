@@ -11,7 +11,7 @@ import serverUtils from '../../utils/serverUtils'
 module.exports = function () {
     return [
         {
-            method: 'POST',
+            method: 'GET',
             path: '/api/buildReportPage',
             handler: async (request, reply) => {
                 let res =  await serverUtils.triggerServerRequest({
