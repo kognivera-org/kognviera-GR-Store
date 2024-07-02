@@ -51,7 +51,7 @@ module.exports = function () {
         tags: ['api'],
         validate: {
           payload: Joi.object({
-            hannel: Joi.string().required(),
+            channel: Joi.string().required(),
             brand: Joi.string().required(),
             eventId: Joi.string().required(),
             ownerId: Joi.string().required(),
