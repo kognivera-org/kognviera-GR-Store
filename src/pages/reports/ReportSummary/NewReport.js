@@ -976,7 +976,7 @@ class NewReport extends Component {
             return false;
         }
 
-
+        console.log("saveFavoriteReportsErrors===",this.props.saveFavoriteReportsErrors,'isvalid==',this.isValidForm)
         var a = this.formToSubmit.dispatchEvent(new Event('submit', { cancelable: true }));
         if (this.isValidForm) {
             this.generateReportCalled = true;
@@ -1299,7 +1299,10 @@ class NewReport extends Component {
 
     }
 
-    handleSubmit = (e, formValues, formErrors, isValidForm) => {
+    handleSubmit = (e, formValues, formErrors, isValidForm) =>
+     {
+        e.preventDefault();
+        console.log(formErrors,"=====",isValidForm);
         this.setState({
             errors: formErrors
         })
@@ -1691,7 +1694,7 @@ class NewReport extends Component {
                             (!this.props.saveFavoriteReportsErrors) && (this.state.disableDownloadButton) && fileProcessingErrMsg
                         }
 
-                    </Form>
+                    
                     <div className="row row-block pt-20">
                         <div className="col-xs-3">
                             <button className="btnSecondaryAction size-Full" onClick={browserHistory && browserHistory.goBack}>Cancelar</button>
@@ -1706,10 +1709,11 @@ class NewReport extends Component {
                             {/* <button type="submit" name="saveAsFavorite" className="btnPrimaryAction size-Full saveAsFavorite">Guardar como favorito</button> */}
                         </div>
                         <div className={`col-xs-3 ${this.props.viewType === this.viewType.FAV ? 'col-xs-offset-9 mt-10' : ''} `}>
-                            <button className={`btnPrimary size-Full ${((!this.props.saveFavoriteReportsErrors) && this.state.disableDownloadButton) || (this.state.storeSelectionLimitErr) ? ' btnPrimaryDisable' : ''}`} onClick={this.generateReport}  >Descargar</button>
+                            <button  className={`btnPrimary size-Full ${((!this.props.saveFavoriteReportsErrors) && this.state.disableDownloadButton) || (this.state.storeSelectionLimitErr) ? ' btnPrimaryDisable' : ''}`} onClick={this.generateReport}> Descargar</button>
                             {/* <button type="submit" name="downloadReport" className="btnPrimary size-Full" >Descargar</button> */}
                         </div>
                     </div>
+                </Form>
                 </div>
                 {
                     (this.props.viewType === this.viewType.FAV && this.props.favouriteReports && !this.props.favouriteReports.length) &&
