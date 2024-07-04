@@ -50,7 +50,7 @@ class EventInfo extends Component {
   }
 
   submitForm = (e) => {
-    e.preventDefault()
+    //e.preventDefault()
     this.formToSubmit.dispatchEvent(new Event('submit'))
   }
 
@@ -97,6 +97,7 @@ class EventInfo extends Component {
     return (
       <React.Fragment>
         <div className="container">
+        <Form onRef={(formToSubmit) => { this.formToSubmit = formToSubmit }} onSubmit={this.handleConfirmDate} method="post">
           <div className="main">
             <div className="row">
               <div className="col-xs-12">
@@ -113,7 +114,7 @@ class EventInfo extends Component {
                         </div>
                       </div>
                     }
-                    <Form onRef={(formToSubmit) => { this.formToSubmit = formToSubmit }} onSubmit={this.handleConfirmDate} method="post">
+                    
                       <div className="col-xs-6 col-xs-offset-3 alignRight">
                         <p className="text-right requiredFields">* Campos Requeridos</p>
                       </div>
@@ -151,7 +152,7 @@ class EventInfo extends Component {
                           ])}
                         />
                       </div>
-                    </Form>
+                    
                   </div>
                 </div>
               </div>
@@ -162,12 +163,13 @@ class EventInfo extends Component {
                 <hr />
                 <div className="botonesSeparados">
                   <button className="btnSecondary size-ExtraLarge" type="button" onClick={e => this.handleRoute(routeconfig.selectedcelebrated)}><i className="iconLeft icon-flecha_light_izq" /> Regresar</button>
-                  <button className="btnPrimary size-ExtraLarge" type="button" onClick={this.submitForm}><i className="iconRight icon-flecha_lightsvg_derecha" /> Siguiente paso
+                  <button className="btnPrimary size-ExtraLarge" type="submit" onClick={this.submitForm}><i className="iconRight icon-flecha_lightsvg_derecha" /> Siguiente paso
                   </button>
                 </div>
               </div>
             </div>
           </div>
+          </Form>
         </div>
       </React.Fragment>
     )
