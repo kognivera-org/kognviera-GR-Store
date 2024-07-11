@@ -163,12 +163,13 @@ const CommonUtil = {
     useIframe
   ) {
     const {jsPDF} = require("jspdf");
-    const splitHtml = require("split-html");
+    var splitHtml = require('split-html');
+    //const splitHtml = require("split-html");
     const pdf = new jsPDF("p", "mm", "a4");
     this.pdfObj = pdf;
     const htmlDom = document.querySelector(elem);
     const innerHTML = htmlDom.innerHTML;
-    let htmlArray =  innerHTML.split('pageBreak')  //splitHtml(innerHTML, ".pageBreak");
+    let htmlArray = innerHTML.split('pageBreak') //splitHtml(innerHTML, ".pageBreak");
     htmlArray = htmlArray.filter(
       (ele) => ele !== '<span class="pageBreak"></span>'
     );
