@@ -17,24 +17,20 @@ module.exports = function () {
                 {
                     request,
                     reply,
-                    transformRequest: (requestObj) => {
-                        delete requestObj.payload.email
-                        return requestObj;
-                    }
-                },
-                {
-                    request,
-                    reply,
                     transformRequest: (requestObj, requestPayload) => {
-                        delete requestObj.path
-                        requestObj.path = '/api/coOwnerEligible'
-                        requestObj.payload.emailId = requestPayload.email
-                        requestObj.payload.eventType = requestPayload.selectedEventType
-                        requestObj.payload.eventId = requestPayload.existingEventId
-                        delete requestObj.payload.email
-                        delete requestObj.payload.selectedEventType
-                        delete requestObj.payload.existingEventId
-                        delete requestObj.payload.selectedEventCategory
+                        // First set of transformations
+                        delete requestObj.payload.email;
+
+                        // Second set of transformations
+                        delete requestObj.path;
+                        requestObj.path = '/api/coOwnerEligible';
+                        requestObj.payload.emailId = requestPayload.email;
+                        requestObj.payload.eventType = requestPayload.selectedEventType;
+                        requestObj.payload.eventId = requestPayload.existingEventId;
+                        delete requestObj.payload.email;
+                        delete requestObj.payload.selectedEventType;
+                        delete requestObj.payload.existingEventId;
+                        delete requestObj.payload.selectedEventCategory;
                         return requestObj;
                     }
                 }]);
