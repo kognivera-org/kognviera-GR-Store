@@ -56,7 +56,7 @@ class SelectedCelebrated extends Component {
   }
 
   handleSubmit = (e) => {
-    e.preventDefault()
+    //e.preventDefault()
     this.formToSubmit.dispatchEvent(new Event('submit'))
   }
 
