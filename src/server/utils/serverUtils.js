@@ -154,10 +154,10 @@ const ServerUtils = {
                                     "data" :mergedData
                                 }
                             }
-                            
+                            return res; 
                             
                     }
-                    return res;
+                    
                 }
             } catch (error) {
                 // reply error if any
