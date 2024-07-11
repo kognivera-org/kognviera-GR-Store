@@ -288,6 +288,7 @@ class SelectedCelebrated extends Component {
       <div className="wrap-address">
         <div className="container">
           <div className="main">
+          <Form id="form1" onRef={(formToSubmit) => { this.formToSubmit = formToSubmit }} onSubmit={this.handleConfirmFormSubmit} method="post">
             <div className="col-xs-12 alignCenter">
               <p className="title">Selección de festejados</p>
             </div>
@@ -318,7 +319,7 @@ class SelectedCelebrated extends Component {
               </div>}
             </div>
             <div className="row row-grid show-grid-row mb-60">
-              <Form id="form1" onRef={(formToSubmit) => { this.formToSubmit = formToSubmit }} onSubmit={this.handleConfirmFormSubmit} method="post">
+              
                 {this.state.celebInfo.map((celeb, id) => (
                   <div className="col-xs-4" key={id} id={id}>
                     {this.selectedEventConfiguration && this.selectedEventConfiguration.titlesEnabled ? <div><SelectionTab
@@ -380,7 +381,6 @@ class SelectedCelebrated extends Component {
                     {celeb.iscoOwner !== 'false' && <button type="button" onClick={e => this.handleDelete(id)} className="btnPrimaryAction size-ExtraLarge" id={`btn${id}`}>Eliminar</button>}
                   </div>
                 ))}
-              </Form>
 
             </div>
             <div className="row show-grid borderTopStyle">
@@ -388,9 +388,10 @@ class SelectedCelebrated extends Component {
                 <button type="button" onClick={this.handleRoute} className="btnSecondaryAction size-ExtraLarge"><i className="iconLeft icon-flecha_light_izq" /> Regresar</button>
               </div>
               <div className="col-xs-6 alignRight">
-                <button className="btnPrimary size-ExtraLarge" id="btnSiguiente" onClick={this.handleSubmit}>Siguiente paso <i className="iconRight icon-flecha_lightsvg_derecha" /></button>
+                <button className="btnPrimary size-ExtraLarge 111" id="btnSiguiente" onClick={this.handleSubmit}>Siguiente paso <i className="iconRight icon-flecha_lightsvg_derecha" /></button>
               </div>
             </div>
+            </Form>
           </div>
         </div>
       </div>
